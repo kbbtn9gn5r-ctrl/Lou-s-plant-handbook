@@ -1,247 +1,269 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#244b34">
-<title>Indoor Plants · Lou's Plant Handbook</title><link rel="stylesheet" href="styles.css"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" href="favicon.png"><link rel="manifest" href="manifest.webmanifest"></head><body>
-<header class="hero indoor-hero"><div class="wrap"><div class="eyebrow">Lou's Plant Handbook</div>
-<h1>Your Indoor Plants</h1><p>Only the houseplants previously documented for Lou are listed here.</p></div></header>
-<div class="nav"><div class="nav-inner">
-<a href="index.html">Home</a>
-<a href="all-plants.html">All Plants</a>
-<a href="indoor-plants.html" class="active">Indoor Plants</a>
-<a href="garden-vegetables.html">Garden Vegetables</a>
-<a href="fruit-berries.html">Fruit &amp; Berries</a>
-<a href="flowers-outdoor.html">Flowers</a>
-<a href="trees-shrubs.html">Trees &amp; Shrubs</a>
-<a href="garden-areas.html">Garden Areas</a>
-<a href="calendar.html">Calendar</a>
-<a href="journal.html">Journal</a>
-</div></div>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#264d38">
+<title>Indoor Plants · Lou's Living Plant Guide</title>
+<style>
+:root{--green:#264d38;--cream:#f6f2e8;--paper:#fffdf8;--line:#d9ddcf;--text:#26332c;}
+*{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--cream);color:var(--text)}
+header{background:linear-gradient(135deg,#244b35,#3f7454);color:white;padding:34px 18px 28px}
+.wrap{max-width:1120px;margin:auto} .eyebrow{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+h1{font-family:Georgia,serif;font-size:clamp(2rem,5vw,3.6rem);margin:.3rem 0} header p{max-width:700px;line-height:1.5}
+nav{position:sticky;top:0;z-index:10;background:#fffdf8dd;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:18px;overflow:auto;padding:12px 18px} nav a{color:var(--green);font-weight:700;text-decoration:none;white-space:nowrap}
+main{max-width:1120px;margin:24px auto;padding:0 16px 40px}
+.search{width:100%;padding:14px 16px;border:1px solid #b9c5b8;border-radius:14px;font-size:1rem;margin-bottom:22px;background:white}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 8px 25px #253d2a12}
+.hero-photo{position:relative;aspect-ratio:4/3;background:#e7ece5;cursor:pointer}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.badge{position:absolute;left:12px;bottom:12px;background:#fffffff2;color:var(--green);font-weight:800;font-size:.78rem;padding:7px 10px;border-radius:999px}
+.content{padding:18px} h2{font-family:Georgia,serif;color:var(--green);margin:0 0 4px;font-size:1.65rem}
+.botanical{color:#617164;margin-bottom:10px} .content p{line-height:1.5}
+.facts{display:grid;gap:10px;margin-top:15px} .facts div{background:#f2f5ef;border-radius:12px;padding:11px}
+.facts strong,.facts span{display:block} .facts span{margin-top:4px;line-height:1.35}
+.gallery{display:flex;gap:8px;margin-top:14px;overflow:auto} .thumb{border:0;padding:0;background:none;cursor:pointer;flex:0 0 72px}
+.thumb img{width:72px;height:72px;object-fit:cover;border-radius:10px;border:2px solid white;box-shadow:0 0 0 1px #bdc8bc}
+.modal{display:none;position:fixed;inset:0;background:#000d;z-index:100;align-items:center;justify-content:center;padding:22px}
+.modal.open{display:flex} .modal img{max-width:95vw;max-height:88vh;border-radius:12px} .close{position:absolute;top:16px;right:18px;font-size:34px;color:white;background:none;border:0}
+footer{text-align:center;padding:26px;color:#657168}
+.notice{background:#fff7dc;border:1px solid #e7d18c;padding:12px 14px;border-radius:12px;margin-bottom:20px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="eyebrow">Lou’s personal growing collection</div><h1>Lou’s Living Plant Guide</h1><p>Indoor plants photographed in Lou’s home, with practical care notes and photo galleries.</p></div></header>
+<nav><div class="wrap"><a href="index.html">Home</a><a href="indoor-plants.html">Indoor Plants</a><a href="garden-vegetables.html">Vegetables</a><a href="flowers-outdoor.html">Flowers</a><a href="fruit-berries.html">Fruit &amp; Berries</a><a href="trees-shrubs.html">Trees &amp; Shrubs</a></div></nav>
 <main>
-<div class="notice"><strong>Corrected indoor collection:</strong> Generic placeholder names have been removed. This page now uses the plants from your earlier Indoor Plants section.</div>
-<section class="section-head"><h2>11 confirmed entries</h2><p>Large and young plants are kept separate where you own more than one.</p></section>
-<input id="indoorSearch" class="search" placeholder="Search your indoor plants…">
-<div class="houseplant-grid">
-<article class="houseplant-card" data-search="large jade plant crassula ovata bright light with some direct sun">
-  <div class="houseplant-illustration">🪴</div>
-  <div class="houseplant-content">
-    <span class="badge">Lou's confirmed plant</span>
-    <h3>Large Jade Plant</h3>
-    <p class="botanical"><em>Crassula ovata</em></p>
-    <div class="meta">
-      <span class="chip">☀ Bright light with some direct sun</span>
-      <span class="chip">💧 Water when soil is dry 2–3 inches down</span>
+<div class="notice"><strong>Identification note:</strong> The broad strap-leaved plant is listed as Dracaena provisionally. Its photos are preserved and the name can be corrected later.</div>
+<input class="search" id="search" placeholder="Search houseplants…">
+<section class="grid" id="grid">
+<article class="card" data-search="prayer plant maranta leuconeura a tropical foliage plant whose patterned leaves often fold upward in the evening.">
+  <div class="hero-photo" onclick="openPhoto('images/houseplants/prayer-plant-1.jpg','Prayer Plant')">
+    <img src="images/houseplants/prayer-plant-1.jpg" alt="Lou's Prayer Plant">
+    <span class="badge">📷 Lou’s actual plant</span>
+  </div>
+  <div class="content">
+    <h2>Prayer Plant</h2>
+    <div class="botanical"><em>Maranta leuconeura</em></div>
+    <p>A tropical foliage plant whose patterned leaves often fold upward in the evening.</p>
+    <div class="facts">
+      <div><strong>☀ Light</strong><span>Bright, indirect light</span></div>
+      <div><strong>💧 Water</strong><span>Keep lightly and evenly moist; do not leave soggy</span></div>
+      <div><strong>🌱 Fertilizer</strong><span>Half-strength balanced houseplant fertilizer every 4–6 weeks in spring and summer</span></div>
+      <div><strong>📝 Lou’s notes</strong><span>Likes humidity. Brown edges often point to dry air or mineral-heavy water.</span></div>
     </div>
-    <details>
-      <summary>Open care notes</summary>
-      <div class="detail-text">
-        <p><strong>Fertilizer:</strong> Diluted succulent fertilizer 2–3 times during spring and summer</p>
-        <p><strong>Pruning or repotting:</strong> Prune during active growth; repot every 2–4 years</p>
-        <p><strong>Lou's notes:</strong> Mature plant pruned June 29, 2026; rotate monthly.</p>
-      </div>
-    </details>
+    <div class="gallery"><button class="thumb" onclick="openPhoto('images/houseplants/prayer-plant-1.jpg', 'Prayer Plant')"><img src="images/houseplants/prayer-plant-1.jpg" alt="Prayer Plant photo 1"></button></div>
   </div>
 </article>
-<article class="houseplant-card" data-search="trailing jade plant trailing succulent — exact species to confirm bright indirect light">
-  <div class="houseplant-illustration">🌱</div>
-  <div class="houseplant-content">
-    <span class="badge">Lou's confirmed plant</span>
-    <h3>Trailing Jade Plant</h3>
-    <p class="botanical"><em>Trailing succulent — exact species to confirm</em></p>
-    <div class="meta">
-      <span class="chip">☀ Bright indirect light</span>
-      <span class="chip">💧 Allow soil to dry between waterings</span>
+<article class="card" data-search="jade plant crassula ovata a long-lived succulent with thick leaves and woody stems.">
+  <div class="hero-photo" onclick="openPhoto('images/houseplants/jade-plant-1.jpg','Jade Plant')">
+    <img src="images/houseplants/jade-plant-1.jpg" alt="Lou's Jade Plant">
+    <span class="badge">📷 Lou’s actual plant</span>
+  </div>
+  <div class="content">
+    <h2>Jade Plant</h2>
+    <div class="botanical"><em>Crassula ovata</em></div>
+    <p>A long-lived succulent with thick leaves and woody stems.</p>
+    <div class="facts">
+      <div><strong>☀ Light</strong><span>Very bright light with some direct sun</span></div>
+      <div><strong>💧 Water</strong><span>Let the mix dry well before watering</span></div>
+      <div><strong>🌱 Fertilizer</strong><span>Light succulent fertilizer 2–3 times during spring and summer</span></div>
+      <div><strong>📝 Lou’s notes</strong><span>Rotate monthly and keep in a heavy pot. Avoid frequent watering.</span></div>
     </div>
-    <details>
-      <summary>Open care notes</summary>
-      <div class="detail-text">
-        <p><strong>Fertilizer:</strong> Light succulent fertilizer in spring and summer</p>
-        <p><strong>Pruning or repotting:</strong> Trim lightly to encourage branching</p>
-        <p><strong>Lou's notes:</strong> Protect the cascading stems from breakage.</p>
-      </div>
-    </details>
+    <div class="gallery"><button class="thumb" onclick="openPhoto('images/houseplants/jade-plant-1.jpg', 'Jade Plant')"><img src="images/houseplants/jade-plant-1.jpg" alt="Jade Plant photo 1"></button><button class="thumb" onclick="openPhoto('images/houseplants/jade-plant-2.jpg', 'Jade Plant')"><img src="images/houseplants/jade-plant-2.jpg" alt="Jade Plant photo 2"></button></div>
   </div>
 </article>
-<article class="houseplant-card" data-search="small jade plant crassula ovata bright light with gentle direct sun">
-  <div class="houseplant-illustration">🪴</div>
-  <div class="houseplant-content">
-    <span class="badge">Lou's confirmed plant</span>
-    <h3>Small Jade Plant</h3>
-    <p class="botanical"><em>Crassula ovata</em></p>
-    <div class="meta">
-      <span class="chip">☀ Bright light with gentle direct sun</span>
-      <span class="chip">💧 Let the potting mix dry well between waterings</span>
+<article class="card" data-search="elephant bush portulacaria afra a branching succulent sometimes called dwarf jade, with smaller leaves than true jade.">
+  <div class="hero-photo" onclick="openPhoto('images/houseplants/elephant-bush-1.jpg','Elephant Bush')">
+    <img src="images/houseplants/elephant-bush-1.jpg" alt="Lou's Elephant Bush">
+    <span class="badge">📷 Lou’s actual plant</span>
+  </div>
+  <div class="content">
+    <h2>Elephant Bush</h2>
+    <div class="botanical"><em>Portulacaria afra</em></div>
+    <p>A branching succulent sometimes called dwarf jade, with smaller leaves than true jade.</p>
+    <div class="facts">
+      <div><strong>☀ Light</strong><span>Bright light with some direct sun</span></div>
+      <div><strong>💧 Water</strong><span>Water thoroughly, then allow to dry</span></div>
+      <div><strong>🌱 Fertilizer</strong><span>Diluted succulent fertilizer during active growth</span></div>
+      <div><strong>📝 Lou’s notes</strong><span>Prune leggy stems to encourage compact branching.</span></div>
     </div>
-    <details>
-      <summary>Open care notes</summary>
-      <div class="detail-text">
-        <p><strong>Fertilizer:</strong> Diluted succulent fertilizer during spring and summer</p>
-        <p><strong>Pruning or repotting:</strong> Pinch or prune during active growth to encourage branching</p>
-        <p><strong>Lou's notes:</strong> Young plant being trained into a balanced miniature-tree shape.</p>
-      </div>
-    </details>
+    <div class="gallery"><button class="thumb" onclick="openPhoto('images/houseplants/elephant-bush-1.jpg', 'Elephant Bush')"><img src="images/houseplants/elephant-bush-1.jpg" alt="Elephant Bush photo 1"></button><button class="thumb" onclick="openPhoto('images/houseplants/elephant-bush-2.jpg', 'Elephant Bush')"><img src="images/houseplants/elephant-bush-2.jpg" alt="Elephant Bush photo 2"></button></div>
   </div>
 </article>
-<article class="houseplant-card" data-search="large aloe vera aloe vera bright light with gradual direct sun">
-  <div class="houseplant-illustration">🌵</div>
-  <div class="houseplant-content">
-    <span class="badge">Lou's confirmed plant</span>
-    <h3>Large Aloe Vera</h3>
-    <p class="botanical"><em>Aloe vera</em></p>
-    <div class="meta">
-      <span class="chip">☀ Bright light with gradual direct sun</span>
-      <span class="chip">💧 Water deeply only after the potting mix dries</span>
+<article class="card" data-search="spider plant chlorophytum comosum an adaptable houseplant that produces arching leaves and plantlets.">
+  <div class="hero-photo" onclick="openPhoto('images/houseplants/spider-plant-1.jpg','Spider Plant')">
+    <img src="images/houseplants/spider-plant-1.jpg" alt="Lou's Spider Plant">
+    <span class="badge">📷 Lou’s actual plant</span>
+  </div>
+  <div class="content">
+    <h2>Spider Plant</h2>
+    <div class="botanical"><em>Chlorophytum comosum</em></div>
+    <p>An adaptable houseplant that produces arching leaves and plantlets.</p>
+    <div class="facts">
+      <div><strong>☀ Light</strong><span>Bright, indirect light</span></div>
+      <div><strong>💧 Water</strong><span>Water when the top inch of soil dries</span></div>
+      <div><strong>🌱 Fertilizer</strong><span>Balanced fertilizer monthly in spring and summer</span></div>
+      <div><strong>📝 Lou’s notes</strong><span>Filtered water may help reduce brown leaf tips.</span></div>
     </div>
-    <details>
-      <summary>Open care notes</summary>
-      <div class="detail-text">
-        <p><strong>Fertilizer:</strong> Very light succulent feeding in spring and summer</p>
-        <p><strong>Pruning or repotting:</strong> Remove damaged leaves; divide offsets when crowded</p>
-        <p><strong>Lou's notes:</strong> Healthy mature specimen with offsets.</p>
-      </div>
-    </details>
+    <div class="gallery"><button class="thumb" onclick="openPhoto('images/houseplants/spider-plant-1.jpg', 'Spider Plant')"><img src="images/houseplants/spider-plant-1.jpg" alt="Spider Plant photo 1"></button></div>
   </div>
 </article>
-<article class="houseplant-card" data-search="young aloe vera aloe vera bright indirect light">
-  <div class="houseplant-illustration">🌱</div>
-  <div class="houseplant-content">
-    <span class="badge">Lou's confirmed plant</span>
-    <h3>Young Aloe Vera</h3>
-    <p class="botanical"><em>Aloe vera</em></p>
-    <div class="meta">
-      <span class="chip">☀ Bright indirect light</span>
-      <span class="chip">💧 Water sparingly after the soil dries</span>
+<article class="card" data-search="aloe vera aloe vera a sun-loving succulent that stores water in fleshy leaves and produces offsets.">
+  <div class="hero-photo" onclick="openPhoto('images/houseplants/aloe-vera-1.jpg','Aloe Vera')">
+    <img src="images/houseplants/aloe-vera-1.jpg" alt="Lou's Aloe Vera">
+    <span class="badge">📷 Lou’s actual plant</span>
+  </div>
+  <div class="content">
+    <h2>Aloe Vera</h2>
+    <div class="botanical"><em>Aloe vera</em></div>
+    <p>A sun-loving succulent that stores water in fleshy leaves and produces offsets.</p>
+    <div class="facts">
+      <div><strong>☀ Light</strong><span>Bright light; acclimate gradually to direct sun</span></div>
+      <div><strong>💧 Water</strong><span>Allow the potting mix to dry thoroughly</span></div>
+      <div><strong>🌱 Fertilizer</strong><span>Very light succulent fertilizer in spring and summer</span></div>
+      <div><strong>📝 Lou’s notes</strong><span>Use a fast-draining mix and never leave water sitting in the saucer.</span></div>
     </div>
-    <details>
-      <summary>Open care notes</summary>
-      <div class="detail-text">
-        <p><strong>Fertilizer:</strong> Very light succulent feeding during active growth</p>
-        <p><strong>Pruning or repotting:</strong> Repot once roots fill the starter pot</p>
-        <p><strong>Lou's notes:</strong> Increase direct sun gradually as it matures.</p>
-      </div>
-    </details>
+    <div class="gallery"><button class="thumb" onclick="openPhoto('images/houseplants/aloe-vera-1.jpg', 'Aloe Vera')"><img src="images/houseplants/aloe-vera-1.jpg" alt="Aloe Vera photo 1"></button><button class="thumb" onclick="openPhoto('images/houseplants/aloe-vera-2.jpg', 'Aloe Vera')"><img src="images/houseplants/aloe-vera-2.jpg" alt="Aloe Vera photo 2"></button><button class="thumb" onclick="openPhoto('images/houseplants/aloe-vera-3.jpg', 'Aloe Vera')"><img src="images/houseplants/aloe-vera-3.jpg" alt="Aloe Vera photo 3"></button></div>
   </div>
 </article>
-<article class="houseplant-card" data-search="spider plant chlorophytum comosum bright indirect light">
-  <div class="houseplant-illustration">🌿</div>
-  <div class="houseplant-content">
-    <span class="badge">Lou's confirmed plant</span>
-    <h3>Spider Plant</h3>
-    <p class="botanical"><em>Chlorophytum comosum</em></p>
-    <div class="meta">
-      <span class="chip">☀ Bright indirect light</span>
-      <span class="chip">💧 Water when the top inch dries</span>
+<article class="card" data-search="gasteria gasteria species a slow-growing succulent with thick, often mottled or textured leaves.">
+  <div class="hero-photo" onclick="openPhoto('images/houseplants/gasteria-1.jpg','Gasteria')">
+    <img src="images/houseplants/gasteria-1.jpg" alt="Lou's Gasteria">
+    <span class="badge">📷 Lou’s actual plant</span>
+  </div>
+  <div class="content">
+    <h2>Gasteria</h2>
+    <div class="botanical"><em>Gasteria species</em></div>
+    <p>A slow-growing succulent with thick, often mottled or textured leaves.</p>
+    <div class="facts">
+      <div><strong>☀ Light</strong><span>Bright, indirect light or gentle morning sun</span></div>
+      <div><strong>💧 Water</strong><span>Let soil dry between waterings</span></div>
+      <div><strong>🌱 Fertilizer</strong><span>Light succulent feed a few times during active growth</span></div>
+      <div><strong>📝 Lou’s notes</strong><span>Tolerates less direct sun than many desert succulents.</span></div>
     </div>
-    <details>
-      <summary>Open care notes</summary>
-      <div class="detail-text">
-        <p><strong>Fertilizer:</strong> Balanced houseplant fertilizer monthly in spring and summer</p>
-        <p><strong>Pruning or repotting:</strong> Repot when tightly rootbound; separate plantlets if desired</p>
-        <p><strong>Lou's notes:</strong> Healthy foliage; filtered water may reduce brown tips.</p>
-      </div>
-    </details>
+    <div class="gallery"><button class="thumb" onclick="openPhoto('images/houseplants/gasteria-1.jpg', 'Gasteria')"><img src="images/houseplants/gasteria-1.jpg" alt="Gasteria photo 1"></button><button class="thumb" onclick="openPhoto('images/houseplants/gasteria-2.jpg', 'Gasteria')"><img src="images/houseplants/gasteria-2.jpg" alt="Gasteria photo 2"></button><button class="thumb" onclick="openPhoto('images/houseplants/gasteria-3.jpg', 'Gasteria')"><img src="images/houseplants/gasteria-3.jpg" alt="Gasteria photo 3"></button></div>
   </div>
 </article>
-<article class="houseplant-card" data-search="christmas cactus schlumbergera hybrid bright indirect light">
-  <div class="houseplant-illustration">🌵</div>
-  <div class="houseplant-content">
-    <span class="badge">Lou's confirmed plant</span>
-    <h3>Christmas Cactus</h3>
-    <p class="botanical"><em>Schlumbergera hybrid</em></p>
-    <div class="meta">
-      <span class="chip">☀ Bright indirect light</span>
-      <span class="chip">💧 Water when the top inch dries</span>
+<article class="card" data-search="zebra haworthia haworthiopsis attenuata a compact clustered succulent with white raised striping.">
+  <div class="hero-photo" onclick="openPhoto('images/houseplants/zebra-haworthia-1.jpg','Zebra Haworthia')">
+    <img src="images/houseplants/zebra-haworthia-1.jpg" alt="Lou's Zebra Haworthia">
+    <span class="badge">📷 Lou’s actual plant</span>
+  </div>
+  <div class="content">
+    <h2>Zebra Haworthia</h2>
+    <div class="botanical"><em>Haworthiopsis attenuata</em></div>
+    <p>A compact clustered succulent with white raised striping.</p>
+    <div class="facts">
+      <div><strong>☀ Light</strong><span>Bright, indirect light</span></div>
+      <div><strong>💧 Water</strong><span>Allow soil to dry between waterings</span></div>
+      <div><strong>🌱 Fertilizer</strong><span>Diluted succulent fertilizer a few times in spring and summer</span></div>
+      <div><strong>📝 Lou’s notes</strong><span>Separate offsets when the clump becomes crowded.</span></div>
     </div>
-    <details>
-      <summary>Open care notes</summary>
-      <div class="detail-text">
-        <p><strong>Fertilizer:</strong> Balanced fertilizer during active growth</p>
-        <p><strong>Pruning or repotting:</strong> Cooler nights and long darkness encourage flower buds</p>
-        <p><strong>Lou's notes:</strong> Avoid moving the plant after buds form.</p>
-      </div>
-    </details>
+    <div class="gallery"><button class="thumb" onclick="openPhoto('images/houseplants/zebra-haworthia-1.jpg', 'Zebra Haworthia')"><img src="images/houseplants/zebra-haworthia-1.jpg" alt="Zebra Haworthia photo 1"></button></div>
   </div>
 </article>
-<article class="houseplant-card" data-search="purple shamrock oxalis triangularis bright indirect light">
-  <div class="houseplant-illustration">☘️</div>
-  <div class="houseplant-content">
-    <span class="badge">Lou's confirmed plant</span>
-    <h3>Purple Shamrock</h3>
-    <p class="botanical"><em>Oxalis triangularis</em></p>
-    <div class="meta">
-      <span class="chip">☀ Bright indirect light</span>
-      <span class="chip">💧 Keep lightly moist during active growth</span>
+<article class="card" data-search="purple shamrock oxalis triangularis a bulb-forming plant with triangular leaves and delicate flowers.">
+  <div class="hero-photo" onclick="openPhoto('images/houseplants/purple-shamrock-1.jpg','Purple Shamrock')">
+    <img src="images/houseplants/purple-shamrock-1.jpg" alt="Lou's Purple Shamrock">
+    <span class="badge">📷 Lou’s actual plant</span>
+  </div>
+  <div class="content">
+    <h2>Purple Shamrock</h2>
+    <div class="botanical"><em>Oxalis triangularis</em></div>
+    <p>A bulb-forming plant with triangular leaves and delicate flowers.</p>
+    <div class="facts">
+      <div><strong>☀ Light</strong><span>Bright, indirect light</span></div>
+      <div><strong>💧 Water</strong><span>Keep lightly moist during active growth</span></div>
+      <div><strong>🌱 Fertilizer</strong><span>Balanced fertilizer monthly while actively growing</span></div>
+      <div><strong>📝 Lou’s notes</strong><span>It may naturally go dormant. Reduce watering until new growth returns.</span></div>
     </div>
-    <details>
-      <summary>Open care notes</summary>
-      <div class="detail-text">
-        <p><strong>Fertilizer:</strong> Balanced fertilizer monthly while actively growing</p>
-        <p><strong>Pruning or repotting:</strong> Allow natural dormancy if foliage dies back</p>
-        <p><strong>Lou's notes:</strong> Resume watering when new growth appears.</p>
-      </div>
-    </details>
+    <div class="gallery"><button class="thumb" onclick="openPhoto('images/houseplants/purple-shamrock-1.jpg', 'Purple Shamrock')"><img src="images/houseplants/purple-shamrock-1.jpg" alt="Purple Shamrock photo 1"></button><button class="thumb" onclick="openPhoto('images/houseplants/purple-shamrock-2.jpg', 'Purple Shamrock')"><img src="images/houseplants/purple-shamrock-2.jpg" alt="Purple Shamrock photo 2"></button></div>
   </div>
 </article>
-<article class="houseplant-card" data-search="geranium pelargonium hybrid bright light with several hours of sun">
-  <div class="houseplant-illustration">🌺</div>
-  <div class="houseplant-content">
-    <span class="badge">Lou's confirmed plant</span>
-    <h3>Geranium</h3>
-    <p class="botanical"><em>Pelargonium hybrid</em></p>
-    <div class="meta">
-      <span class="chip">☀ Bright light with several hours of sun</span>
-      <span class="chip">💧 Water when the soil surface begins to dry</span>
+<article class="card" data-search="dracaena dracaena species — identification tentative a strap-leaved tropical houseplant photographed in two stages.">
+  <div class="hero-photo" onclick="openPhoto('images/houseplants/dracaena-1.jpg','Dracaena')">
+    <img src="images/houseplants/dracaena-1.jpg" alt="Lou's Dracaena">
+    <span class="badge">📷 Lou’s actual plant</span>
+  </div>
+  <div class="content">
+    <h2>Dracaena</h2>
+    <div class="botanical"><em>Dracaena species — identification tentative</em></div>
+    <p>A strap-leaved tropical houseplant photographed in two stages.</p>
+    <div class="facts">
+      <div><strong>☀ Light</strong><span>Bright, indirect light</span></div>
+      <div><strong>💧 Water</strong><span>Let the upper soil dry before watering</span></div>
+      <div><strong>🌱 Fertilizer</strong><span>Balanced fertilizer monthly in spring and summer</span></div>
+      <div><strong>📝 Lou’s notes</strong><span>This identification is marked tentative so it can be corrected later without losing the photos.</span></div>
     </div>
-    <details>
-      <summary>Open care notes</summary>
-      <div class="detail-text">
-        <p><strong>Fertilizer:</strong> Flowering houseplant fertilizer during active growth</p>
-        <p><strong>Pruning or repotting:</strong> Deadhead and pinch stems to keep the plant compact</p>
-        <p><strong>Lou's notes:</strong> Bring indoors before frost and inspect carefully for pests.</p>
-      </div>
-    </details>
+    <div class="gallery"><button class="thumb" onclick="openPhoto('images/houseplants/dracaena-1.jpg', 'Dracaena')"><img src="images/houseplants/dracaena-1.jpg" alt="Dracaena photo 1"></button><button class="thumb" onclick="openPhoto('images/houseplants/dracaena-2.jpg', 'Dracaena')"><img src="images/houseplants/dracaena-2.jpg" alt="Dracaena photo 2"></button></div>
   </div>
 </article>
-<article class="houseplant-card" data-search="zebra haworthia haworthiopsis attenuata bright indirect light or gentle morning sun">
-  <div class="houseplant-illustration">🌵</div>
-  <div class="houseplant-content">
-    <span class="badge">Lou's confirmed plant</span>
-    <h3>Zebra Haworthia</h3>
-    <p class="botanical"><em>Haworthiopsis attenuata</em></p>
-    <div class="meta">
-      <span class="chip">☀ Bright indirect light or gentle morning sun</span>
-      <span class="chip">💧 Allow soil to dry between waterings</span>
+<article class="card" data-search="basil ocimum basilicum a culinary herb being grown indoors in a bright window.">
+  <div class="hero-photo" onclick="openPhoto('images/houseplants/basil-1.jpg','Basil')">
+    <img src="images/houseplants/basil-1.jpg" alt="Lou's Basil">
+    <span class="badge">📷 Lou’s actual plant</span>
+  </div>
+  <div class="content">
+    <h2>Basil</h2>
+    <div class="botanical"><em>Ocimum basilicum</em></div>
+    <p>A culinary herb being grown indoors in a bright window.</p>
+    <div class="facts">
+      <div><strong>☀ Light</strong><span>Very bright light or several hours of sun</span></div>
+      <div><strong>💧 Water</strong><span>Keep evenly moist but not waterlogged</span></div>
+      <div><strong>🌱 Fertilizer</strong><span>Light balanced fertilizer every 3–4 weeks</span></div>
+      <div><strong>📝 Lou’s notes</strong><span>Pinch flower spikes and harvest regularly to encourage branching.</span></div>
     </div>
-    <details>
-      <summary>Open care notes</summary>
-      <div class="detail-text">
-        <p><strong>Fertilizer:</strong> Diluted succulent feed a few times during active growth</p>
-        <p><strong>Pruning or repotting:</strong> Separate offsets when the clump becomes crowded</p>
-        <p><strong>Lou's notes:</strong> Needs less direct sun than many desert succulents.</p>
-      </div>
-    </details>
+    <div class="gallery"><button class="thumb" onclick="openPhoto('images/houseplants/basil-1.jpg', 'Basil')"><img src="images/houseplants/basil-1.jpg" alt="Basil photo 1"></button></div>
   </div>
 </article>
-<article class="houseplant-card" data-search="gasteria gasteria species bright indirect light">
-  <div class="houseplant-illustration">🌿</div>
-  <div class="houseplant-content">
-    <span class="badge">Lou's confirmed plant</span>
-    <h3>Gasteria</h3>
-    <p class="botanical"><em>Gasteria species</em></p>
-    <div class="meta">
-      <span class="chip">☀ Bright indirect light</span>
-      <span class="chip">💧 Water after the potting mix dries</span>
-    </div>
-    <details>
-      <summary>Open care notes</summary>
-      <div class="detail-text">
-        <p><strong>Fertilizer:</strong> Light succulent feed in spring and summer</p>
-        <p><strong>Pruning or repotting:</strong> Repot or divide offsets when crowded</p>
-        <p><strong>Lou's notes:</strong> Protect from intense midday sun and cold drafts.</p>
-      </div>
-    </details>
+<article class="card" data-search="geranium pelargonium species a flowering container plant that can be overwintered indoors.">
+  <div class="hero-photo" onclick="openPhoto('images/houseplants/geranium-1.jpg','Geranium')">
+    <img src="images/houseplants/geranium-1.jpg" alt="Lou's Geranium">
+    <span class="badge">📷 Lou’s actual plant</span>
   </div>
-</article></div>
+  <div class="content">
+    <h2>Geranium</h2>
+    <div class="botanical"><em>Pelargonium species</em></div>
+    <p>A flowering container plant that can be overwintered indoors.</p>
+    <div class="facts">
+      <div><strong>☀ Light</strong><span>Bright light with direct sun</span></div>
+      <div><strong>💧 Water</strong><span>Water when the upper soil begins to dry</span></div>
+      <div><strong>🌱 Fertilizer</strong><span>Flowering houseplant fertilizer during active growth</span></div>
+      <div><strong>📝 Lou’s notes</strong><span>Deadhead spent blooms and pinch leggy stems.</span></div>
+    </div>
+    <div class="gallery"><button class="thumb" onclick="openPhoto('images/houseplants/geranium-1.jpg', 'Geranium')"><img src="images/houseplants/geranium-1.jpg" alt="Geranium photo 1"></button></div>
+  </div>
+</article>
+<article class="card" data-search="christmas cactus schlumbergera species a forest cactus with flat segmented stems and seasonal flowers.">
+  <div class="hero-photo" onclick="openPhoto('images/houseplants/christmas-cactus-1.jpg','Christmas Cactus')">
+    <img src="images/houseplants/christmas-cactus-1.jpg" alt="Lou's Christmas Cactus">
+    <span class="badge">📷 Lou’s actual plant</span>
+  </div>
+  <div class="content">
+    <h2>Christmas Cactus</h2>
+    <div class="botanical"><em>Schlumbergera species</em></div>
+    <p>A forest cactus with flat segmented stems and seasonal flowers.</p>
+    <div class="facts">
+      <div><strong>☀ Light</strong><span>Bright, indirect light</span></div>
+      <div><strong>💧 Water</strong><span>Water when the upper layer begins to dry</span></div>
+      <div><strong>🌱 Fertilizer</strong><span>Balanced fertilizer during spring and summer</span></div>
+      <div><strong>📝 Lou’s notes</strong><span>Cool nights and long uninterrupted darkness help trigger buds.</span></div>
+    </div>
+    <div class="gallery"><button class="thumb" onclick="openPhoto('images/houseplants/christmas-cactus-1.jpg', 'Christmas Cactus')"><img src="images/houseplants/christmas-cactus-1.jpg" alt="Christmas Cactus photo 1"></button></div>
+  </div>
+</article></section>
+</main>
+<div class="modal" id="modal" onclick="closePhoto()"><button class="close" aria-label="Close">×</button><img id="modalImg" alt=""></div>
+<footer>Lou’s Living Plant Guide · Indoor photo edition</footer>
 <script>
-const s=document.getElementById('indoorSearch'),cards=[...document.querySelectorAll('.houseplant-card')];
-s.addEventListener('input',()=>{const q=s.value.toLowerCase();cards.forEach(c=>c.style.display=c.dataset.search.includes(q)?'grid':'none')});
+const input=document.getElementById('search');
+const cards=[...document.querySelectorAll('.card')];
+input.addEventListener('input',()=>{const q=input.value.toLowerCase();cards.forEach(c=>c.style.display=c.dataset.search.includes(q)?'':'none')});
+function openPhoto(src,name){if(!src)return;document.getElementById('modalImg').src=src;document.getElementById('modalImg').alt=name;document.getElementById('modal').classList.add('open')}
+function closePhoto(){document.getElementById('modal').classList.remove('open')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closePhoto()});
 </script>
-</main><footer>Lou's Plant Handbook · Living website edition</footer></body></html>
+</body></html>
