@@ -1,25 +1,17 @@
-LOU'S LIVING PLANT GUIDE — INDOOR PHOTO UPDATE
+LOU'S GARDEN & PLANT GUIDE — PHOTO FIX UPDATE
 
-Recommended new name:
-Lou's Living Plant Guide
+This update fixes the question-mark photographs by embedding the actual photos directly inside
+indoor-plants.html. No images folder is required.
 
-Why this name works:
-- "Living" signals that the website will continue to grow and change.
-- "Plant Guide" feels less formal than "handbook" and fits a searchable website.
-- It still sounds personal and easy to remember.
+UPLOAD STEPS
+1. Open your GitHub repository: Lou-s-plant-handbook
+2. Open the existing indoor-plants.html file.
+3. Choose the pencil/edit option, or delete the old file and upload this new indoor-plants.html.
+4. Commit the change.
+5. Wait 1–3 minutes and refresh the website.
 
-WHAT IS INCLUDED
-- indoor-plants.html
-- images/houseplants/ with Lou's actual uploaded photographs
-- 12 plant entries with galleries and care notes
+The page title is now:
+Lou's Garden & Plant Guide
 
-UPLOAD TO GITHUB
-1. Open the Lou-s-plant-handbook repository.
-2. Upload indoor-plants.html.
-3. Upload the entire images folder, preserving the images/houseplants structure.
-4. Commit the changes.
-5. Wait about 1–3 minutes, then refresh the website.
-
-NOTE
-The broad strap-leaved plant is labeled “Dracaena” provisionally because the exact identification
-is uncertain. The photos are included and can be renamed later without losing them.
+This ZIP intentionally does not replace index.html or the other plant pages, so the rest of the
+existing 43+ plant website remains intact.
