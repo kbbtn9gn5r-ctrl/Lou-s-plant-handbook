@@ -60,38 +60,9 @@ footer{text-align:center;color:var(--muted);padding:25px}
 .reference-card p{line-height:1.55;color:var(--muted)}
 @media(max-width:700px){.dashboard{grid-template-columns:1fr}.guide-grid{grid-template-columns:1fr}.guide-grid .wide{grid-column:auto}}
 
-/* Photo correction: show complete portrait and landscape photographs */
-.plant-photo{
-  width:100%;
-  height:auto;
-  max-height:none;
-  object-fit:contain;
-  display:block;
-  background:#eef1ea;
-}
+.plant-photo{width:100%;height:auto;max-height:none;object-fit:contain;display:block;background:#eef1ea}
 .photo-gallery-head{margin-top:36px}
-.photo-gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:16px;
-}
-.gallery-item{
-  margin:0;
-  overflow:hidden;
-  background:var(--paper);
-  border:1px solid var(--line);
-  border-radius:18px;
-  box-shadow:var(--shadow);
-}
-.gallery-item img{
-  width:100%;
-  height:auto;
-  display:block;
-  object-fit:contain;
-  background:#eef1ea;
-}
-.gallery-item figcaption{
-  padding:10px 12px;
-  color:var(--muted);
-  font:700 12px Arial,sans-serif;
-}
+.photo-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.gallery-item{margin:0;overflow:hidden;background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.gallery-item img{width:100%;height:auto;display:block;object-fit:contain;background:#eef1ea}
+.gallery-item figcaption{padding:10px 12px;color:var(--muted);font:700 12px Arial,sans-serif}

@@ -1,16 +1,10 @@
-LOU'S PHOTO FIX
+CORRECTED PHOTO MATCHES
 
-Why the photos did not show:
-The previous trees-shrubs.html looked for photos inside an "images" folder.
-These corrected files look for the photos in the main repository, matching
-the way the photos were uploaded individually.
+Upload all files in this package to the main level of the GitHub repository.
+Replace trees-shrubs.html and styles.css when prompted, then commit.
 
-Upload to GitHub:
-1. Upload trees-shrubs.html and styles.css and replace the existing copies.
-2. Keep all 27 JPEG photographs in the main repository beside index.html.
-3. Commit the changes.
-4. Wait a few minutes, then refresh the website.
-
-This correction also:
-- Displays photos without cropping.
-- Adds a gallery containing every photo uploaded today.
+This correction:
+- Removes the incorrect photo/name pairings.
+- Assigns photos only where the match is reasonably confident.
+- Places uncertain photos in an “Identification pending” gallery.
+- Shows full photographs without cropping.
