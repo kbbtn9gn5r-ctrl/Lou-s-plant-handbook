@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2f6b3b">
+  <title>Lou's Plant Handbook</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">My Living Garden Guide</p>
+      <h1>Lou's Plant Handbook</h1>
+      <p>Search plants, review care notes, and keep your garden information together.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-panel">
+      <label for="search">Search the handbook</label>
+      <input id="search" type="search" placeholder="Try pumpkin, dahlia, jade...">
+    </section>
+
+    <section class="categories" aria-label="Plant categories">
+      <button data-category="All" class="active">All</button>
+      <button data-category="Vegetables">Vegetables</button>
+      <button data-category="Flowers">Flowers</button>
+      <button data-category="Fruits & Berries">Fruits & Berries</button>
+      <button data-category="Indoor Plants">Indoor Plants</button>
+    </section>
+
+    <section>
+      <h2>Plants</h2>
+      <div id="plant-grid" class="plant-grid"></div>
+    </section>
+
+    <section class="guide-grid">
+      <article>
+        <h2>Monthly Care Calendar</h2>
+        <p>Seasonal reminders for planting, feeding, pruning, watering, and harvesting in Maine.</p>
+      </article>
+      <article>
+        <h2>Fertilizer Guide</h2>
+        <p>Quick guidance for Tomato-Tone, Flower-Tone, Neptune's Harvest, and balanced fertilizers.</p>
+      </article>
+      <article>
+        <h2>Pest Guide</h2>
+        <p>Track cucumber beetles, squash bugs, aphids, and other common garden problems.</p>
+      </article>
+      <article>
+        <h2>Garden Journal</h2>
+        <p>A future section for photos, planting dates, harvest notes, and observations.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lou's Plant Handbook · Living edition</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
