@@ -43,3 +43,19 @@ button{border:0;border-radius:999px;padding:11px 16px;background:var(--forest);c
 .pest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:13px}.pest{background:white;border:1px solid var(--line);border-radius:17px;padding:16px}.pest .icon{font-size:34px}.pest h3{margin:8px 0 5px}.pest p{color:var(--muted);line-height:1.45;margin:0}
 footer{text-align:center;color:var(--muted);padding:25px}
 @media(max-width:520px){.plant-grid{grid-template-columns:1fr}}
+
+.botanical{margin:.15rem 0 .8rem;color:var(--muted)}
+.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px}
+.guide-grid .wide{grid-column:1/-1}
+.plant-photo{width:100%;height:220px;object-fit:cover;display:block;background:#e8eadf}
+.photo-placeholder{height:220px;display:grid;place-items:center;background:linear-gradient(135deg,#dfe8d9,#f0ecdd);color:var(--muted);font-weight:700}
+.photo-card .plant-top{padding:12px 18px}
+.dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px}
+.dashboard div{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;text-align:center;box-shadow:var(--shadow)}
+.dashboard strong{display:block;font-size:34px;color:var(--forest)}
+.dashboard span{font:700 12px Arial,sans-serif;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.reference-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.reference-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+.reference-card h2{margin-top:0;color:var(--forest)}
+.reference-card p{line-height:1.55;color:var(--muted)}
+@media(max-width:700px){.dashboard{grid-template-columns:1fr}.guide-grid{grid-template-columns:1fr}.guide-grid .wide{grid-column:auto}}

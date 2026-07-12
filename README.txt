@@ -1,15 +1,16 @@
-LOU'S PLANT HANDBOOK — MULTI-PAGE EDITION
+Lou's Plant Handbook — Version 2.0
 
-Upload ALL files in this folder to the top level of the GitHub repository:
-- index.html
-- styles.css
-- indoor-plants.html
-- garden-vegetables.html
-- fruit-berries.html
-- flowers-outdoor.html
-- trees-shrubs.html
-- pests.html
-- calendar.html
-- journal.html
+UPLOAD TO GITHUB:
+1. Open the Lou-s-plant-handbook repository.
+2. Upload every file and the entire images folder from this package.
+3. Replace files with the same names.
+4. Make sure index.html is in the top level of the repository.
+5. Commit the changes.
+6. Refresh the GitHub Pages website. It may take a few minutes to update.
 
-Do not upload only index.html. The pages and styles file must all be present together.
+Main changes:
+- Expanded vegetable planting information for central Maine
+- Individual Trees & Shrubs entries with selected photos
+- Updated home page totals and dashboard
+- Expanded monthly calendar
+- New fertilizer guide
