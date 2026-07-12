@@ -1,19 +1,24 @@
-LOU'S GARDEN GUIDE — VERSION 2.1 FIXED
+LOU'S GARDEN GUIDE — FINAL UPDATE FOR TODAY
 
-This version fixes missing or broken home-page images by embedding all photographs directly
-inside index.html. There is no assets folder to upload.
+Upload every file in this ZIP directly to the TOP LEVEL of the GitHub repository.
+Do not create or upload an assets folder.
 
-UPLOAD TO THE TOP LEVEL OF GITHUB:
-- index.html
-- all icon files
-- favicon files
-- manifest.webmanifest
+This update includes:
+- Approved Lou's Garden Guide icon
+- 3-second splash screen
+- Brighter hero photo with a subtle dark text gradient
+- Today's Garden moved directly below the hero
+- Wayne weather card
+- Plant category cards
+- Garden at a Glance
+- Plant of the Week
+- This Week in the Garden
+- Garden Map
+- Upcoming Tasks
+- Recent Garden Photos
+- Search
 
-Replace the existing files with these versions.
-Keep all existing plant-section pages.
+Keep all existing plant-section HTML files.
 
-The splash screen now appears for 3 seconds on every full opening of the home page.
-
-After committing, wait 2–5 minutes, close the site, and reopen it.
-Look at the footer for:
-Version 2.1 Self-Contained
+After committing, wait 2–5 minutes and reopen the published website.
+The footer will say: Final Update for Today.
