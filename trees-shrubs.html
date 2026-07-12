@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#244b34">
+<title>Trees &amp; Shrubs · Lou's Plant Handbook</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<div class="eyebrow">Lou's Plant Handbook · Multi-page Edition</div>
+<h1>Trees &amp; Shrubs</h1>
+<p>2 plant entries in this section.</p>
+</div></header>
+<div class="nav"><div class="nav-inner"><a href="index.html">Home</a><a href="indoor-plants.html">Indoor Plants</a><a href="garden-vegetables.html">Garden Vegetables</a><a href="fruit-berries.html">Fruit &amp; Berries</a><a href="flowers-outdoor.html">Flowers</a><a href="trees-shrubs.html" class="active">Trees &amp; Shrubs</a><a href="pests.html">Pests</a><a href="calendar.html">Calendar</a><a href="journal.html">Journal</a></div></div>
+<main>
+<section class="section-head"><h2>2 entries</h2><p>Search or scroll through this section.</p></section>
+<input id="search" class="search" placeholder="Search this section…">
+<div id="plantGrid" class="plant-grid">
+<article class="plant-card" data-search="flowering shrubs landscape shrubs grown for flowers, foliage and structure. aphids, leaf spots, winter dieback">
+  <div class="plant-top"><span class="plant-icon">🌳</span><span class="badge">Trees &amp; Shrubs</span></div>
+  <div class="plant-body">
+    <h3>Flowering Shrubs</h3>
+    <p>Landscape shrubs grown for flowers, foliage and structure.</p>
+    <div class="meta"><span class="chip">☀ Full sun to part shade, depending on species</span><span class="chip">💧 Deep watering during establishment and drought</span></div>
+  </div>
+  <details><summary>Open full care details</summary>
+    <div class="detail-text">
+      <p><strong>Fertilizer:</strong> Compost in spring; avoid unnecessary heavy feeding</p>
+      <p><strong>Harvest or pruning:</strong> Prune according to whether the shrub blooms on old or new wood</p>
+      <p><strong>Common problems:</strong> Aphids, leaf spots, winter dieback</p>
+      <p><strong>Lou's notes:</strong> Weigela has its own page; add other shrub names as identification is confirmed.</p>
+    </div>
+  </details>
+</article>
+<article class="plant-card" data-search="weigela flowering shrub best pruned immediately after spring bloom. aphids, leaf spot, winter dieback">
+  <div class="plant-top"><span class="plant-icon">🌳</span><span class="badge">Trees &amp; Shrubs</span></div>
+  <div class="plant-body">
+    <h3>Weigela</h3>
+    <p>Flowering shrub best pruned immediately after spring bloom.</p>
+    <div class="meta"><span class="chip">☀ Full sun</span><span class="chip">💧 Deeply during drought and establishment</span></div>
+  </div>
+  <details><summary>Open full care details</summary>
+    <div class="detail-text">
+      <p><strong>Fertilizer:</strong> Compost in spring; avoid heavy feeding</p>
+      <p><strong>Harvest or pruning:</strong> Prune after flowering on old wood</p>
+      <p><strong>Common problems:</strong> Aphids, leaf spot, winter dieback</p>
+      <p><strong>Lou's notes:</strong> Remove up to one-third of the oldest stems at ground level when rejuvenating.</p>
+    </div>
+  </details>
+</article></div>
+<script>
+const input=document.getElementById('search');
+const cards=[...document.querySelectorAll('.plant-card')];
+input.addEventListener('input',()=>{
+ const q=input.value.toLowerCase();
+ cards.forEach(c=>c.style.display=c.dataset.search.includes(q)?'':'none');
+});
+</script></main>
+<footer>Lou's Plant Handbook · Living website edition</footer>
+</body>
+</html>
