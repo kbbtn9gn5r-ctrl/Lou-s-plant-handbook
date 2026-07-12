@@ -1,9 +1,0 @@
-{
-  "name": "Lou's Plant Handbook",
-  "short_name": "Plant Handbook",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#f7f3e8",
-  "theme_color": "#315f3b",
-  "icons": []
-}
