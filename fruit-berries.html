@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#244b34">
 <title>Fruit &amp; Berries · Lou's Plant Handbook</title>
 <link rel="stylesheet" href="styles.css">
-</head>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" href="favicon.png"><link rel="manifest" href="manifest.webmanifest"></head>
 <body>
 <header class="hero"><div class="wrap">
 <div class="eyebrow">Lou's Plant Handbook · Version 2.0</div>
@@ -116,7 +116,16 @@ input.addEventListener('input',()=>{
  const q=input.value.toLowerCase();
  cards.forEach(c=>c.style.display=c.dataset.search.includes(q)?'':'none');
 });
-</script></main>
+</script>
+<section class="section-head photo-gallery-head"><h2>Lou’s Fruit & Berry Photos</h2>
+<p>Current photographs from Lou’s garden.</p></section>
+<div class="feature-grid">
+<article class="feature-card"><img src="DB2AD9FF-0DB0-40D6-9626-34F5DE9A3C07.jpeg" alt="Blueberry bush loaded with fruit">
+<h3>Highbush Blueberry</h3><p>Healthy mature bushes with fruit at several ripening stages.</p></article>
+<article class="feature-card"><img src="F5E64BAD-F9EF-4FD9-B6E5-63ABEB72356F.jpeg" alt="Grape clusters on Lou’s arbor">
+<h3>Grapes</h3><p>Developing clusters trained on the garden arbor.</p></article>
+</div>
+</main>
 <footer>Lou's Plant Handbook · Living website edition</footer>
 </body>
 </html>
