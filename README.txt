@@ -1,29 +1,26 @@
-LOU'S PLANT HANDBOOK — COMPLETE PHOTO & ICON UPDATE
+LOU'S GARDEN HANDBOOK — DASHBOARD & HOUSEPLANT UPDATE
 
-UPLOAD INSTRUCTIONS
-1. Open the GitHub repository: Lou-s-plant-handbook
+You do not need to upload more photos before using this update.
+All 13 indoor plants are visible with clean plant icons and care cards.
+Personal houseplant photos can be added later whenever convenient.
+
+UPLOAD
+1. Open Lou-s-plant-handbook on GitHub.
 2. Choose Add file > Upload files.
-3. Upload EVERY file in this package to the main repository level.
-4. Replace files with the same names.
-5. Commit the changes.
+3. Upload every file in this package to the main repository level.
+4. Replace existing files.
+5. Commit changes.
 6. Wait 2–5 minutes and refresh the live site.
 
-NEW IN THIS UPDATE
-- Custom iPad Home Screen icon and web-app manifest
-- Ash Tree page
-- Maple Tree page
-- Burning Bush page
-- Weigela page
-- Rose Bush photo
-- Blueberry and grape photos
-- Peony photo collection
-- Rhubarb vegetable entry
-- Correctly labeled string bean, Swiss chard, rhubarb, lettuce and kale photos
-- Red-berried shrub kept clearly marked as identification pending
+NEW
+- New Lou's Garden Handbook home dashboard
+- Large photo category tiles
+- Visible Indoor Plants section with 13 houseplants
+- Search All Plants page
+- Month-aware garden task list
+- Quick garden log saved on the iPad
+- Garden Areas page
+- Updated navigation on every page
 
-LIVE SITE
-https://kbbtn9gn5r-ctrl.github.io/Lou-s-plant-handbook/
-
-IMPORTANT FOR THE NEW ICON
-After the website updates, delete the old Home Screen shortcut from the iPad.
-Open the live site in Safari, tap Share, then Add to Home Screen again.
+The dashboard does not display live weather yet because the GitHub site has no weather service connected.
+The month-aware tasks work automatically without an account or added cost.

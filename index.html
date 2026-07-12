@@ -1,28 +1,68 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#244b34"><title>Lou's Plant Handbook</title><link rel="stylesheet" href="styles.css"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" href="favicon.png"><link rel="manifest" href="manifest.webmanifest"></head><body>
-<header class="hero"><div class="wrap"><div class="eyebrow">Lou's Plant Handbook · Version 2.0</div><h1>Lou's Plant Handbook</h1>
-<p>A personal, searchable guide to Lou’s vegetables, fruit, flowers, houseplants, trees and shrubs.</p></div></header>
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#244b34">
+<title>Lou's Garden Handbook</title><link rel="stylesheet" href="styles.css"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" href="favicon.png"><link rel="manifest" href="manifest.webmanifest"></head><body>
+<header class="hero home-hero"><div class="wrap"><div class="eyebrow">Living Plant Library &amp; Garden Journal</div>
+<h1>Lou's Garden Handbook</h1><p>Your plants, photographs, Maine growing guides and seasonal garden records.</p></div></header>
 <div class="nav"><div class="nav-inner">
 <a href="index.html" class="active">Home</a>
+<a href="all-plants.html">All Plants</a>
 <a href="indoor-plants.html">Indoor Plants</a>
 <a href="garden-vegetables.html">Garden Vegetables</a>
 <a href="fruit-berries.html">Fruit &amp; Berries</a>
 <a href="flowers-outdoor.html">Flowers</a>
 <a href="trees-shrubs.html">Trees &amp; Shrubs</a>
-<a href="fertilizer-guide.html">Fertilizer Guide</a>
-<a href="pests.html">Pests</a>
+<a href="garden-areas.html">Garden Areas</a>
 <a href="calendar.html">Calendar</a>
 <a href="journal.html">Journal</a>
-</div></div><main>
-<div class="dashboard"><div><strong>51</strong><span>plant entries</span></div><div><strong>14</strong><span>detailed vegetable guides</span></div><div><strong>10</strong><span>tree &amp; shrub entries</span></div></div>
-<section class="section-head"><h2>Browse by plant type</h2><p>Open a section to search and view care details.</p></section>
-<div class="category-grid">
-<a class="category-card" href="indoor-plants.html"><div class="icon">🪴</div><h3>Indoor Plants</h3><p>Houseplants and succulents.</p><span class="count">13 entries</span></a>
-<a class="category-card" href="garden-vegetables.html"><div class="icon">🥕</div><h3>Garden Vegetables</h3><p>Central Maine start dates, planting and harvest details.</p><span class="count">14 entries</span></a>
-<a class="category-card" href="fruit-berries.html"><div class="icon">🫐</div><h3>Fruit &amp; Berries</h3><p>Blueberries, grapes, honeyberries and cane fruit.</p><span class="count">5 entries</span></a>
-<a class="category-card" href="flowers-outdoor.html"><div class="icon">🌸</div><h3>Flowers</h3><p>Annuals, perennials and pollinator plants.</p><span class="count">9 entries</span></a>
-<a class="category-card" href="trees-shrubs.html"><div class="icon">🌳</div><h3>Trees &amp; Shrubs</h3><p>Your photographed landscape plants and care guidance.</p><span class="count">8 entries</span></a>
-<a class="category-card" href="fertilizer-guide.html"><div class="icon">🧺</div><h3>Fertilizer Guide</h3><p>Tomato-Tone, Flower-Tone, compost and more.</p><span class="count">Quick reference</span></a>
+</div></div>
+<main>
+<section class="dashboard-welcome">
+<div><span class="dashboard-label">Today in Lou’s Garden</span><h2 id="todayHeading">Seasonal Garden Dashboard</h2>
+<p id="todayDate"></p></div>
+<a class="primary-button" href="all-plants.html">🔍 Search all plants</a>
+</section>
+
+<div class="dashboard-stats">
+<div><strong>54</strong><span>searchable entries</span></div>
+<div><strong>13</strong><span>indoor plants</span></div>
+<div><strong>15</strong><span>vegetable guides</span></div>
+<div><strong>13</strong><span>trees &amp; shrubs</span></div>
 </div>
-<div class="notice"><strong>Version 2.0 update:</strong> Added ash, maple, burning bush, weigela, rose, blueberry, grapes, peonies, rhubarb and new vegetable photographs, plus a custom iPad icon.</div>
-</main><footer>Lou's Plant Handbook · Living website edition</footer></body></html>
+
+<section class="dashboard-panel"><div class="panel-heading"><h2>This month’s tasks</h2><a href="calendar.html">Full calendar →</a></div>
+<ul id="monthTasks" class="task-list"></ul></section>
+
+<section class="section-head"><h2>Browse Lou’s garden</h2><p>Large photo tiles now make every main section easy to find.</p></section>
+<div class="photo-category-grid">
+<a href="garden-vegetables.html" class="photo-category-card"><img src="2BEEBA14-B348-42B2-937B-29995C1FF211.jpeg" alt="Lou’s vegetable garden"><div><h3>Garden Vegetables</h3><p>Planting, indoor starting, harvest and crop photos.</p></div></a>
+<a href="flowers-outdoor.html" class="photo-category-card"><img src="D0734146-72F8-404E-8942-3A9CE404181E.jpeg" alt="Lou’s peonies"><div><h3>Flowers</h3><p>Peonies, dahlias, daylilies, lavender and more.</p></div></a>
+<a href="trees-shrubs.html" class="photo-category-card"><img src="CEE1471A-EADB-4F15-811E-F57FCD5D43BD.jpeg" alt="Lou’s ash tree"><div><h3>Trees &amp; Shrubs</h3><p>Individual pages with Lou’s landscape photos.</p></div></a>
+<a href="fruit-berries.html" class="photo-category-card"><img src="DB2AD9FF-0DB0-40D6-9626-34F5DE9A3C07.jpeg" alt="Lou’s blueberries"><div><h3>Fruit &amp; Berries</h3><p>Blueberries, grapes, honeyberries and cane fruit.</p></div></a>
+<a href="indoor-plants.html" class="photo-category-card indoor-tile"><div class="indoor-tile-art">🪴</div><div><h3>Indoor Plants</h3><p>All 13 houseplants are now clearly visible.</p></div></a>
+<a href="garden-areas.html" class="photo-category-card"><img src="49E9CFC4-2975-4F17-A889-3A572A06A4F3.jpeg" alt="Lou’s garden"><div><h3>Garden Areas</h3><p>Pool garden, vegetable garden, shade garden and more.</p></div></a>
+</div>
+
+<section class="dashboard-two-column">
+<article class="dashboard-panel"><div class="panel-heading"><h2>Quick garden log</h2><a href="journal.html">Open full journal →</a></div>
+<textarea id="quickLog" placeholder="Write a quick note, such as: watered blueberries, picked beans, saw cucumber beetles…"></textarea>
+<button id="saveQuickLog" class="primary-button">Save on this device</button><p id="saveStatus" class="save-status"></p></article>
+<article class="dashboard-panel"><h2>What’s likely active now</h2><div id="seasonCards" class="season-cards"></div></article>
+</section>
+
+<script>
+const taskData={"0": ["Order seeds and review last year\u2019s journal.", "Check stored dahlias and winter squash.", "Inspect houseplants for insects."], "1": ["Finalize the raised-bed plan.", "Order fertilizer and pest-control supplies.", "Check houseplant light levels."], "2": ["Start peppers indoors.", "Start tomatoes late in the month.", "Prune dormant raspberry and blackberry canes."], "3": ["Direct sow lettuce, kale, chard and beets.", "Prepare beds when soil is workable.", "Plant potatoes late in the month if conditions allow."], "4": ["Plant potatoes and hardy crops.", "Start pumpkins and squash indoors.", "Harden off cool-season transplants."], "5": ["Transplant tomatoes, peppers and squash after cold nights pass.", "Mulch and stake plants.", "Begin weekly pest checks."], "6": ["Harvest beans, lettuce, chard and berries.", "Monitor squash leaves for eggs and beetles.", "Water deeply during dry weather."], "7": ["Harvest garlic, zucchini and berries.", "Start fall lettuce and kale.", "Continue picking beans every few days."], "8": ["Harvest pumpkins and winter squash before hard frost.", "Cure storage crops.", "Record harvest results."], "9": ["Plant garlic.", "Lift dahlias after frost.", "Clean diseased foliage from beds."], "10": ["Protect young shrubs from browsing.", "Drain hoses and store tools.", "Finish leaf mulch."], "11": ["Review the garden journal.", "Plan next year\u2019s changes.", "Check indoor plants for dry air and pests."]};
+const now=new Date(),m=now.getMonth();
+document.getElementById('todayDate').textContent=now.toLocaleDateString(undefined,{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+document.getElementById('todayHeading').textContent=now.toLocaleDateString(undefined,{month:'long'})+' Garden Dashboard';
+document.getElementById('monthTasks').innerHTML=taskData[m].map(t=>'<li>'+t+'</li>').join('');
+const seasonal={
+0:['Houseplants','Seed planning'],1:['Houseplants','Garden planning'],2:['Indoor seed starting','Dormant pruning'],
+3:['Cool-season vegetables','Bed preparation'],4:['Potatoes','Hardy greens'],5:['Tomatoes & peppers','Squash planting'],
+6:['Berries','Beans & zucchini'],7:['Garlic harvest','Fall sowing'],8:['Storage crops','Late harvest'],
+9:['Garlic planting','Dahlia lifting'],10:['Shrub protection','Tool storage'],11:['Houseplants','Season review']
+};
+document.getElementById('seasonCards').innerHTML=seasonal[m].map(x=>'<span class="season-chip">'+x+'</span>').join('');
+const log=document.getElementById('quickLog');log.value=localStorage.getItem('lousQuickGardenLog')||'';
+document.getElementById('saveQuickLog').addEventListener('click',()=>{localStorage.setItem('lousQuickGardenLog',log.value);document.getElementById('saveStatus').textContent='Saved on this iPad.';});
+</script>
+</main><footer>Lou's Garden Handbook · Living website edition</footer></body></html>
