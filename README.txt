@@ -1,16 +1,16 @@
-Lou's Plant Handbook — Version 2.0
+LOU'S PHOTO FIX
 
-UPLOAD TO GITHUB:
-1. Open the Lou-s-plant-handbook repository.
-2. Upload every file and the entire images folder from this package.
-3. Replace files with the same names.
-4. Make sure index.html is in the top level of the repository.
-5. Commit the changes.
-6. Refresh the GitHub Pages website. It may take a few minutes to update.
+Why the photos did not show:
+The previous trees-shrubs.html looked for photos inside an "images" folder.
+These corrected files look for the photos in the main repository, matching
+the way the photos were uploaded individually.
 
-Main changes:
-- Expanded vegetable planting information for central Maine
-- Individual Trees & Shrubs entries with selected photos
-- Updated home page totals and dashboard
-- Expanded monthly calendar
-- New fertilizer guide
+Upload to GitHub:
+1. Upload trees-shrubs.html and styles.css and replace the existing copies.
+2. Keep all 27 JPEG photographs in the main repository beside index.html.
+3. Commit the changes.
+4. Wait a few minutes, then refresh the website.
+
+This correction also:
+- Displays photos without cropping.
+- Adds a gallery containing every photo uploaded today.
