@@ -1,17 +1,28 @@
-PLANT LIBRARY UPDATE
+LOU'S GARDEN & PLANT GUIDE — APP IDENTITY UPDATE
 
-This update replaces only index.html.
+This update changes the iPad Home Screen icon and adds:
+- New app icon matching the new name
+- Matching browser favicon
+- Web app manifest
+- Standalone iPad launch mode
+- Branded portrait splash screen
+- Basic offline support for the home page and indoor plant page
 
-What it adds:
-- A searchable 43-plant library
-- Category filters
-- Houseplant photographs on the home page
-- Direct links to the existing plant sections
-- Lou's Garden & Plant Guide name
+UPLOAD TO GITHUB
+1. Upload and replace index.html.
+2. Upload and replace indoor-plants.html.
+3. Upload manifest.webmanifest, service-worker.js, and favicon.ico.
+4. Upload the entire icons folder.
+5. Commit all changes.
+6. Wait 2–5 minutes.
 
-Upload:
-1. Delete the current index.html in GitHub and commit.
-2. Upload this new index.html and commit.
-3. Wait 2–5 minutes and reopen the website.
+IMPORTANT FOR THE IPAD ICON
+The existing Home Screen icon will not change automatically.
+After the website update is live:
+1. Delete the old Home Screen shortcut.
+2. Open the website in Safari.
+3. Tap Share.
+4. Tap Add to Home Screen.
+5. Confirm the name “Lou's Garden.”
 
-Do not delete the other website files.
+The new icon should then appear.

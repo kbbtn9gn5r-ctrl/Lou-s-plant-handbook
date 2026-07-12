@@ -1,13 +1,20 @@
 {
-  "name": "Lou's Plant Handbook",
-  "short_name": "Lou's Plants",
+  "name": "Lou's Garden & Plant Guide",
+  "short_name": "Lou's Garden",
+  "description": "Lou's personal plant library, care calendar, photo collection, and garden journal.",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#f7f2e7",
-  "theme_color": "#244b34",
+  "background_color": "#F5F1E7",
+  "theme_color": "#244B34",
   "icons": [
     {
-      "src": "app-icon-512.png",
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

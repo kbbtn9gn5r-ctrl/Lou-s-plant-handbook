@@ -22,7 +22,18 @@ main{padding:24px 16px 45px}.notice{background:#eaf5e9;border:1px solid #b8d3b7;
 .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:#000d;padding:20px;z-index:99}
 .modal.open{display:flex}.modal img{max-width:95vw;max-height:90vh;border-radius:12px}.close{position:absolute;top:13px;right:17px;border:0;background:none;color:white;font-size:38px}
 footer{text-align:center;padding:25px;color:#68736c}
-</style></head>
+</style>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Lou's Garden">
+<link rel="apple-touch-startup-image" href="icons/splash-2048x2732.png">
+
+</head>
 <body>
 <header><div class="wrap"><div>LOU’S PERSONAL COLLECTION</div><h1>Lou’s Garden &amp; Plant Guide</h1><p>Indoor plants photographed in Lou’s home, with practical care notes and photo galleries.</p></div></header>
 <nav><div class="wrap"><a href="index.html">Home</a><a href="indoor-plants.html">Indoor Plants</a><a href="garden-vegetables.html">Vegetables</a><a href="flowers-outdoor.html">Flowers</a><a href="fruit-berries.html">Fruit &amp; Berries</a><a href="trees-shrubs.html">Trees &amp; Shrubs</a></div></nav>
@@ -219,4 +230,9 @@ q.addEventListener('input',()=>{const s=q.value.toLowerCase();cards.forEach(c=>c
 function showPhoto(src){document.getElementById('big').src=src;document.getElementById('modal').classList.add('open')}
 function hidePhoto(){document.getElementById('modal').classList.remove('open')}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')hidePhoto()});
-</script></body></html>
+</script><script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./service-worker.js'));
+}
+</script>
+</body></html>

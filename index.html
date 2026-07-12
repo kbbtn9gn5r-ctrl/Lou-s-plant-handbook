@@ -30,7 +30,18 @@ main{max-width:1180px;margin:auto;padding:25px 16px 48px}
 .quick{margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.quick a{background:#e8eee6;border:1px solid #cdd8ca;padding:18px;border-radius:16px;color:var(--green);font-weight:800;text-decoration:none;text-align:center}
 footer{text-align:center;padding:28px;color:#69746d}
 @media(max-width:700px){.dashboard{grid-template-columns:repeat(2,1fr)}.tools{grid-template-columns:1fr}.quick{grid-template-columns:1fr}.media{height:155px}}
-</style></head>
+</style>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Lou's Garden">
+<link rel="apple-touch-startup-image" href="icons/splash-2048x2732.png">
+
+</head>
 <body>
 <header class="hero"><div class="wrap"><div class="eyebrow">Lou’s personal growing collection</div><h1>Lou’s Garden &amp; Plant Guide</h1><p>A searchable plant library for Lou’s houseplants, garden vegetables, flowers, fruit, berries, trees and shrubs.</p></div></header>
 <nav><div class="wrap"><a href="index.html">Plant Library</a><a href="indoor-plants.html">Indoor Plants</a><a href="garden-vegetables.html">Vegetables</a><a href="fruit-berries.html">Fruit &amp; Berries</a><a href="flowers-outdoor.html">Flowers</a><a href="trees-shrubs.html">Trees &amp; Shrubs</a><a href="pests.html">Pests</a><a href="calendar.html">Calendar</a><a href="journal.html">Journal</a></div></nav>
@@ -200,4 +211,9 @@ function update(){
 }
 search.addEventListener('input',update);
 buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');category=b.dataset.cat;update();}));
-</script></body></html>
+</script><script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./service-worker.js'));
+}
+</script>
+</body></html>
