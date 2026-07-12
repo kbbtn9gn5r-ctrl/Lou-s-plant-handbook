@@ -60,9 +60,18 @@ footer{text-align:center;color:var(--muted);padding:25px}
 .reference-card p{line-height:1.55;color:var(--muted)}
 @media(max-width:700px){.dashboard{grid-template-columns:1fr}.guide-grid{grid-template-columns:1fr}.guide-grid .wide{grid-column:auto}}
 
-.plant-photo{width:100%;height:auto;max-height:none;object-fit:contain;display:block;background:#eef1ea}
-.photo-gallery-head{margin-top:36px}
-.photo-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.gallery-item{margin:0;overflow:hidden;background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
-.gallery-item img{width:100%;height:auto;display:block;object-fit:contain;background:#eef1ea}
-.gallery-item figcaption{padding:10px 12px;color:var(--muted);font:700 12px Arial,sans-serif}
+/* Individual Trees & Shrubs pages */
+.plant-directory{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.plant-directory-card{display:block;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+.plant-directory-card img,.thumb-placeholder{width:100%;height:220px;object-fit:contain;display:grid;place-items:center;background:#eef1ea;font-size:64px}
+.plant-directory-card>div{padding:16px}.plant-directory-card h3{font-size:25px;margin:10px 0 4px}
+.plant-directory-card p{color:var(--muted);margin:0 0 10px}.open-page{font-weight:700;color:var(--forest)}
+.back-link{display:inline-block;margin-bottom:18px;font-weight:700;color:var(--forest)}
+.plant-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:24px}
+.plant-gallery img{width:100%;height:auto;display:block;object-fit:contain;background:#eef1ea;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.photo-placeholder.large{min-height:280px;border:1px solid var(--line);border-radius:18px;margin-bottom:24px}
+.plant-detail-page{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.plant-detail-page h2{font-size:32px;margin-top:0}.plant-detail-page>p{font-size:18px;line-height:1.6;color:var(--muted)}
+.detail-panels{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.detail-panels article{background:#f8f5ed;border:1px solid var(--line);border-radius:15px;padding:15px}
+.detail-panels h3{margin:0 0 6px;color:var(--forest)}.detail-panels p{margin:0;line-height:1.5;color:var(--muted)}
