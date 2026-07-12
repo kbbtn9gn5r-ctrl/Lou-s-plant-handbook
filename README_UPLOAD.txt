@@ -1,31 +1,27 @@
-LOU'S GARDEN & PLANT GUIDE — WELCOME HOME UPDATE
+CLEAN WELCOME + IPAD ICON UPDATE
 
-WHAT CHANGED
-- A warmer, more welcoming home page
-- No search-results look on opening
-- Personal welcome, seasonal focus, featured plant, categories, quick access, and recent photos
-- A new text-free app icon that remains readable at iPad Home Screen size
-- Versioned icon and manifest filenames to avoid the old cached icon
-- A refresh.html page that clears the old saved website version
-
-UPLOAD TO GITHUB
-Upload and replace:
+Upload every file in this package to the TOP LEVEL of the GitHub repository:
 - index.html
-- manifest-v2.webmanifest
-- service-worker-v2.js
-- favicon-v2.ico
-- refresh.html
-- the complete icons folder
+- apple-touch-icon.png
+- apple-touch-icon-precomposed.png
+- apple-touch-icon-167x167.png
+- apple-touch-icon-152x152.png
+- icon-192.png
+- icon-512.png
+- favicon.png
+- manifest.webmanifest
 
-Keep all existing plant section files.
+IMPORTANT
+- Do not upload any of these files into a folder.
+- This version uses relative links instead of a fixed GitHub path.
+- It does not use a service worker, so an older cached app version should not interfere.
 
-AFTER THE UPDATE IS LIVE
-1. Open your website in Safari.
-2. Add /refresh.html to the end of the web address and open it.
-3. Tap “Refresh Website.”
-4. Delete the old Home Screen shortcut.
-5. Close Safari completely.
-6. Reopen the website in Safari.
-7. Choose Share → Add to Home Screen.
+AFTER GITHUB PAGES UPDATES
+1. Delete the old iPad Home Screen shortcut.
+2. Close Safari.
+3. Reopen the PUBLISHED website:
+   https://kbbtn9gn5r-ctrl.github.io/Lou-s-plant-handbook/
+4. Tap Share > Add to Home Screen.
+5. Confirm the preview shows the green plant icon before tapping Add.
 
-The icon will not change on an existing shortcut. It must be removed and added again.
+If the preview still shows the GitHub logo, do not tap Add. Reload the published page once and try Share > Add to Home Screen again.
