@@ -1,0 +1,13 @@
+LOU'S GARDEN GUIDE — COMPLETE PHOTO PATH FIX
+
+This version corrects all locally referenced missing files found in the website review:
+- Restores the updates-2026 image folder used by the journals and plant pages.
+- Adds the four assets/journal images used by photo-journal.html.
+- Adds the icons folder required by the web app manifest and service worker.
+- Updates the service-worker cache version so older broken-image results are replaced.
+
+UPLOAD:
+Upload the CONTENTS of this folder to the main level of the GitHub repository, replacing files when asked.
+Do not upload only the outer folder as a new subfolder.
+
+After GitHub finishes publishing, open refresh.html once on the iPad or iPhone, tap the reset button, then reopen the website.
