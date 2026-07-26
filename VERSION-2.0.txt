@@ -1,0 +1,6 @@
+LOU'S GARDEN GUIDE — VERSION 2.0
+Built July 26, 2026
+
+This package contains the complete website, not a partial patch.
+All local page, photo, icon, script, and stylesheet references were checked.
+The offline cache was upgraded to Version 2.0 and old caches are deleted automatically.

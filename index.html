@@ -323,5 +323,16 @@ const results=[...document.querySelectorAll('.search-results a')];
 function runSearch(v){const q=v.trim().toLowerCase();results.forEach(i=>i.style.display=q&&i.dataset.search.includes(q)?'block':'none')}
 searchInputs.forEach(i=>i.addEventListener('input',e=>runSearch(e.target.value)));
 </script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', async () => {
+    try {
+      const reg = await navigator.serviceWorker.register('./service-worker.js?v=2.0', {updateViaCache:'none'});
+      await reg.update();
+    } catch (e) { console.log('Service worker update:', e); }
+  });
+}
+</script>
 </body>
 </html>
