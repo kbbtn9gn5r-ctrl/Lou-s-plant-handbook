@@ -1,14 +1,12 @@
-LOU'S GARDEN GUIDE — JOURNAL PHOTO REPAIR
+LOU'S GARDEN GUIDE — SMALL PHOTO PATCH
 
-Upload the contents of this folder to the ROOT of the GitHub repository.
+Upload only the HTML files in this ZIP to the main level of the GitHub repository.
+Choose "Replace" when prompted.
 
-Included:
+This patch does not upload or duplicate any photos.
+It changes the journal pages so they use the photo files already stored in the repository.
+
+Files changed:
+- garden-updates-2026.html
 - photo-journal.html
-- assets/journal/ with repaired image files and several compatible filename aliases
-
-Important:
-This patch does not replace index.html, so the correct home page remains unchanged.
-
-The included images are labeled fallback journal images, not Lou's original uploaded photographs.
-They prevent question-mark/broken-image icons. Original photographs can replace these files later
-using the exact same filenames without changing the journal page.
+- journal.html
