@@ -2,61 +2,304 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#244b34">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#315D3F">
 <title>Lou's Garden Guide</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="update.css">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=30">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png?v=30">
+<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png?v=30">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png?v=30">
+<link rel="icon" sizes="32x32" href="favicon-32.png?v=30">
+<link rel="icon" sizes="16x16" href="favicon-16.png?v=30">
+<link rel="shortcut icon" href="favicon.ico?v=30">
+<link rel="manifest" href="manifest.webmanifest?v=30">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Lou's Garden">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<style>
+:root{
+ --forest:#315D3F;--dark:#244832;--sage:#7E9B7A;--cream:#F7F3E9;
+ --paper:#FFFDF8;--line:#D9DED1;--text:#2F3932;--muted:#6B746E;--gold:#D8B662;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit}
+
+/* 3-second splash */
+#splash{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;
+ background:radial-gradient(circle,#FFFDF8 0%,#F3EBDD 72%,#E8DDC8 100%);
+ transition:opacity .65s ease,visibility .65s ease}
+#splash.hide{opacity:0;visibility:hidden}
+.splash-inner{text-align:center;padding:28px}
+.splash-inner img{width:min(46vw,300px);height:auto;border-radius:28px;box-shadow:0 18px 50px #243b2b25;image-rendering:auto}
+.splash-inner h1{font:700 clamp(2rem,6vw,3.8rem) Georgia,serif;color:var(--forest);margin:22px 0 7px}
+.splash-inner p{font:italic 1.05rem Georgia,serif;color:#627064;margin:0}
+.splash-inner small{display:block;margin-top:14px;letter-spacing:.12em;text-transform:uppercase;color:#7B817C}
+
+.site-header{background:var(--paper);border-bottom:1px solid var(--line)}
+.topbar{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 18px}
+.brand{display:flex;align-items:center;gap:13px}
+.brand img{width:70px;height:70px;border-radius:15px;object-fit:cover;image-rendering:auto}
+.brand strong{display:block;color:var(--forest);font:700 clamp(1.4rem,3vw,2.05rem) Georgia,serif}
+.brand span{font-size:.78rem;letter-spacing:.12em;color:#68806A;text-transform:uppercase}
+.top-search{min-width:250px;max-width:350px;flex:1}
+.top-search input{width:100%;padding:12px 15px;border:1px solid #B9C4B7;border-radius:999px;background:#FFFEFA}
+
+nav{background:#FFFDF8;border-top:1px solid #EFF1EB}
+nav .wrap{display:flex;gap:18px;overflow:auto;padding:11px 18px}
+.wrap,main{max-width:1180px;margin:auto}
+nav a{text-decoration:none;color:var(--forest);font-weight:750;white-space:nowrap}
+
+.hero{position:relative;min-height:500px;background:url('garden-hero.jpg') center/cover no-repeat;display:flex;align-items:center}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,48,31,.74) 0%,rgba(22,48,31,.42) 38%,rgba(22,48,31,.08) 68%,rgba(22,48,31,0) 100%)}
+.hero-content{position:relative;max-width:1180px;margin:auto;width:100%;padding:54px 18px}
+.hero-panel{max-width:560px;color:white}
+.hero-panel .eyebrow{font:italic 1.25rem Georgia,serif;color:#E6F0E2}
+.hero-panel h1{font:700 clamp(2.9rem,7vw,5.2rem)/.98 Georgia,serif;margin:.2rem 0 1rem;text-shadow:0 3px 18px #0007}
+.hero-panel p{font-size:1.05rem;line-height:1.65;max-width:480px;text-shadow:0 2px 10px #0007}
+.hero-panel .quote{font:italic 1rem Georgia,serif;color:#F4F0DC;margin-top:14px}
+
+main{padding:18px 16px 54px}
+.today-strip{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;margin-top:-34px;position:relative}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 10px 28px #2A3E2F12}
+.card h2{font:700 1.5rem Georgia,serif;color:var(--forest);margin:0 0 10px}
+.task-list{margin:0;padding-left:20px;line-height:1.75}
+.weather-card{background:linear-gradient(145deg,#FFF9E8,#F6EBC4)}
+.weather-card .weather-title{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.weather-card strong{font:700 1.35rem Georgia,serif;color:var(--forest)}
+.weather-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:12px}
+.weather-grid div{background:#FFFDF8AA;border:1px solid #E4DAB8;border-radius:12px;padding:10px;text-align:center}
+.weather-grid span{display:block;font-size:.8rem;color:var(--muted);margin-top:3px}
+
+.section-title{margin:32px 0 14px}
+.section-title h2{font:700 2rem Georgia,serif;color:var(--forest);margin:0}
+.section-title p{margin:5px 0;color:#657168}
+
+.categories{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.category{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;box-shadow:0 7px 20px #2A3E2F0D}
+.category img{width:100%;height:135px;object-fit:cover;display:block}
+.category .body{padding:14px}
+.category strong{display:block;color:var(--forest);font:700 1.17rem Georgia,serif}
+.category small{display:block;color:var(--muted);margin-top:5px;line-height:1.35}
+
+.mid-grid{display:grid;grid-template-columns:.9fr 1.1fr 1fr;gap:14px}
+.stats{display:grid;grid-template-columns:1fr auto;gap:8px 12px;align-items:center}
+.stats b{color:var(--forest)}
+.feature img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px}
+.feature h3{font:700 1.45rem Georgia,serif;color:var(--forest);margin:10px 0 6px}
+.button{display:inline-block;background:var(--forest);color:white;text-decoration:none;padding:10px 14px;border-radius:999px;font-weight:800;margin-top:8px}
+.recent-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.recent-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px}
+
+.lower{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin-top:14px}
+.map-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
+.map-grid a{background:#E9F0E6;border:1px dashed #9BB09A;border-radius:14px;padding:16px;text-decoration:none;text-align:center;color:var(--forest);font-weight:800}
+.upcoming ul{padding-left:20px;line-height:1.75}
+
+.photo-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.photo-row img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;border:1px solid var(--line)}
+
+.search-band{display:flex;align-items:center;gap:16px;background:linear-gradient(90deg,#F0F2E7,#FFFDF8);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:14px}
+.search-band input{flex:1;padding:13px 15px;border:1px solid #B7C2B5;border-radius:999px;background:white}
+.search-results{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin-top:10px}
+.search-results a{display:none;background:white;border:1px solid var(--line);padding:10px;border-radius:10px;text-decoration:none}
+
+footer{text-align:center;padding:28px;color:#6B756E}
+
+
+.update-banner{margin:24px 0 4px;background:linear-gradient(135deg,#EEF4E9,#FFFDF8);border:1px solid #C9D7C5;border-left:6px solid var(--forest);border-radius:18px;padding:20px;box-shadow:0 8px 24px #2A3E2F0D}
+.update-banner h2{font:700 1.7rem Georgia,serif;color:var(--forest);margin:0 0 8px}
+.update-banner p{margin:0;line-height:1.6}
+.status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.status-item{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:15px}
+.status-item strong{display:block;color:var(--forest);font:700 1.08rem Georgia,serif;margin-bottom:5px}
+.status-item span{display:inline-block;margin-top:8px;background:#E5EFE2;color:var(--dark);font-size:.78rem;font-weight:800;padding:5px 9px;border-radius:999px}
+@media(max-width:760px){.status-grid{grid-template-columns:1fr}}
+@media(max-width:950px){
+ .topbar{align-items:flex-start;flex-direction:column}
+ .top-search{width:100%;max-width:none}
+ .today-strip,.mid-grid,.lower{grid-template-columns:1fr}
+ .categories{grid-template-columns:repeat(2,1fr)}
+}
+</style>
 </head>
 <body>
-<header class="hero"><div class="wrap">
-<div class="eyebrow">Lou's Garden Guide · Updated July 26, 2026</div>
-<h1>Lou's Garden Guide</h1>
-<p>A personal, searchable guide and seasonal record for Lou's Maine garden.</p>
-</div></header>
-<div class="nav"><div class="nav-inner">
-<a href="index.html" class="active">Home</a>
-<a href="indoor-plants.html">Indoor Plants</a>
-<a href="garden-vegetables.html">Garden Vegetables</a>
-<a href="fruit-berries.html">Fruit &amp; Berries</a>
-<a href="flowers-outdoor.html">Flowers</a>
-<a href="trees-shrubs.html">Trees &amp; Shrubs</a>
-<a href="pests.html">Pests</a>
-<a href="calendar.html">Calendar</a>
-<a href="journal.html">Journal</a>
-</div></div>
-<main>
-<section class="section-head"><h2>This Week in Lou's Garden</h2><p>Late-July priorities for Central Maine.</p></section>
-
-<div class="status-grid">
-<article class="status-card"><span>🧄</span><h3>Garlic</h3><p><strong>Harvested July 26, 2026.</strong> Cure in shade with strong airflow for 2–4 weeks.</p><div class="status-tag">Curing</div></article>
-<article class="status-card"><span>🥔</span><h3>Potatoes</h3><p>Watch for yellowing and dying vines. Reduce watering as plants naturally decline.</p><div class="status-tag">Near harvest</div></article>
-<article class="status-card"><span>🥕</span><h3>Detroit Beets</h3><p>Harvest selected roots at about 2–3 inches while continuing even watering.</p><div class="status-tag">Harvest as needed</div></article>
-<article class="status-card"><span>🍅</span><h3>Tomatoes</h3><p>Continue steady watering, Tomato-tone at labeled intervals, and bird protection.</p><div class="status-tag">Fruiting</div></article>
-<article class="status-card"><span>🫑</span><h3>King of the North</h3><p>Keep wood-chip mulch away from stems and pick peppers regularly.</p><div class="status-tag">Healthy</div></article>
-<article class="status-card"><span>🎃</span><h3>Pumpkins &amp; Squash</h3><p>Inspect leaf undersides for squash bug eggs and water deeply at soil level.</p><div class="status-tag">Pest watch</div></article>
+<div id="splash">
+  <div class="splash-inner">
+    <img src="icon-512.png?v=31" alt="Lou's Garden Guide emblem">
+    <h1>Lou’s Garden Guide</h1>
+    <p>Growing Beauty. One Season at a Time.</p>
+    <small>Wayne, Maine</small>
+  </div>
 </div>
 
-<section class="task-panel">
-<h2>Late-July Checklist</h2>
-<div class="task-columns">
-<div><h3>Harvest</h3><p>Garlic ✓<br>Beets as needed<br>Tomatoes<br>Peppers<br>Blackberries</p></div>
-<div><h3>Monitor</h3><p>Potato vine decline<br>Squash bug eggs<br>Cucumber beetles<br>Hornworms<br>Blossom-end rot</p></div>
-<div><h3>Care</h3><p>Water deeply<br>Pick ripe produce often<br>Remove damaged foliage<br>Photograph crop progress</p></div>
-</div>
+<header class="site-header">
+  <div class="topbar">
+    <div class="brand">
+      <img src="icon-512.png?v=31" alt="Lou's Garden Guide">
+      <div><strong>Lou’s Garden Guide</strong><span>Grow beautiful. Live well.</span></div>
+    </div>
+    <div class="top-search"><input id="topSearch" placeholder="Search plants, pests, notes…"></div>
+  </div>
+  <nav>
+    <div class="wrap">
+      <a href="index.html">Home</a>
+      <a href="indoor-plants.html">Indoor Plants</a>
+      <a href="garden-vegetables.html">Vegetables</a>
+      <a href="fruit-berries.html">Fruit &amp; Berries</a>
+      <a href="flowers-outdoor.html">Flowers</a>
+      <a href="trees-shrubs.html">Trees &amp; Shrubs</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="journal.html">Journal</a>
+      <a href="pests.html">Pest Guide</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-panel">
+      <div class="eyebrow">Welcome to</div>
+      <h1>Lou’s Garden Guide</h1>
+      <p>A living record of my gardens in Wayne, Maine—vegetables, flowers, berries, trees, shrubs, and houseplants. Updated throughout every season with photographs and practical care notes.</p>
+      <div class="quote">Every day something new is growing.</div>
+    </div>
+  </div>
 </section>
 
-<section class="section-head"><h2>Browse by plant type</h2><p>Plant care pages remain organized in five sections.</p></section>
-<div class="category-grid">
-<a class="category-card" href="indoor-plants.html"><div class="icon">🪴</div><h3>Indoor Plants</h3><p>Jade, Haworthia, aloe and other houseplants.</p><span class="count">Open section</span></a>
-<a class="category-card" href="garden-vegetables.html"><div class="icon">🥕</div><h3>Garden Vegetables</h3><p>Current crop care, harvest timing and personalized notes.</p><span class="count">14 entries</span></a>
-<a class="category-card" href="fruit-berries.html"><div class="icon">🫐</div><h3>Fruit &amp; Berries</h3><p>Blueberries, blackberries, grapes and other fruit.</p><span class="count">5 entries</span></a>
-<a class="category-card" href="flowers-outdoor.html"><div class="icon">🌸</div><h3>Flowers</h3><p>Dahlias, lavender, petunias, peonies and pollinator plants.</p><span class="count">Open section</span></a>
-<a class="category-card" href="trees-shrubs.html"><div class="icon">🌳</div><h3>Trees &amp; Shrubs</h3><p>Landscape care and seasonal pruning references.</p><span class="count">Open section</span></a>
-</div>
+<main>
+  <section class="today-strip">
+    <div class="card">
+      <h2>Today’s Garden</h2>
+      <ul class="task-list">
+        <li><strong>Garlic harvested July 26:</strong> keep curing in shade with strong airflow.</li>
+        <li>Harvest Detroit beets as they reach about 2–3 inches.</li>
+        <li>Watch potato vines for natural yellowing and die-back.</li>
+        <li>Inspect squash and pumpkin leaves for eggs and cucumber beetles.</li>
+      </ul>
+    </div>
+    <div class="card weather-card">
+      <div class="weather-title"><h2>Wayne Weather</h2><strong>Check Today</strong></div>
+      <div class="weather-grid">
+        <div><b>Temperature</b><span>Current forecast</span></div>
+        <div><b>Rain Chance</b><span>Before watering</span></div>
+        <div><b>Sunrise / Sunset</b><span>Daylight hours</span></div>
+        <div><b>First Frost</b><span>Track in fall</span></div>
+      </div>
+    </div>
+  </section>
 
-<div class="notice"><strong>Newest record:</strong> The 2026 garlic crop was harvested July 26 and is now curing.</div>
+  <section class="update-banner" aria-label="July 26 garden update">
+    <h2>Garden Update · July 26, 2026</h2>
+    <p>The original garden-photo introduction remains unchanged. This update records the garlic harvest and the most important late-July care steps.</p>
+    <div class="status-grid">
+      <div class="status-item"><strong>🧄 Garlic</strong>Harvested July 26. Cure for 2–4 weeks before trimming roots and tops.<br><span>Curing</span></div>
+      <div class="status-item"><strong>🥔 Potatoes</strong>Watch for vines to yellow and die back; reduce watering as they decline.<br><span>Near harvest</span></div>
+      <div class="status-item"><strong>🥕 Detroit Beets</strong>Harvest the largest roots first and keep the remaining bed evenly moist.<br><span>Harvest as needed</span></div>
+      <div class="status-item"><strong>🍅 Tomatoes</strong>Continue steady watering, Tomato-tone at label intervals, and bird protection.<br><span>Fruiting</span></div>
+      <div class="status-item"><strong>🫑 King of the North</strong>Keep wood-chip mulch away from stems and harvest peppers regularly.<br><span>Healthy</span></div>
+      <div class="status-item"><strong>🎃 Pumpkins &amp; Squash</strong>Check leaf undersides weekly for squash bug eggs and water at soil level.<br><span>Pest watch</span></div>
+    </div>
+  </section>
+
+  <div class="section-title"><h2>Explore the Garden</h2><p>Browse by plant type.</p></div>
+  <section class="categories">
+    <a class="category" href="indoor-plants.html"><img src="prayer-plant.jpg" alt=""><div class="body"><strong>Indoor Plants</strong><small>Houseplants and indoor care</small></div></a>
+    <a class="category" href="garden-vegetables.html"><img src="garden-photo-3.jpg" alt=""><div class="body"><strong>Vegetable Garden</strong><small>Fresh vegetables and herbs</small></div></a>
+    <a class="category" href="fruit-berries.html"><img src="garden-photo-1.jpg" alt=""><div class="body"><strong>Fruit &amp; Berries</strong><small>Sweet harvests from the garden</small></div></a>
+    <a class="category" href="flowers-outdoor.html"><img src="garden-photo-2.jpg" alt=""><div class="body"><strong>Flowers</strong><small>Annuals and perennials</small></div></a>
+    <a class="category" href="trees-shrubs.html"><img src="garden-hero.jpg" alt=""><div class="body"><strong>Trees &amp; Shrubs</strong><small>Long-term landscape care</small></div></a>
+  </section>
+
+  <div class="section-title"><h2>Garden Highlights</h2></div>
+  <section class="mid-grid">
+    <div class="card">
+      <h2>Garden at a Glance</h2>
+      <div class="stats">
+        <span>Total Plants</span><b>43+</b>
+        <span>House Plants</span><b>13</b>
+        <span>Vegetables</span><b>14</b>
+        <span>Flowers</span><b>9</b>
+        <span>Fruit Crops</span><b>5</b>
+        <span>Trees &amp; Shrubs</span><b>2+</b>
+      </div>
+    </div>
+    <div class="card feature">
+      <h2>Plant of the Week</h2>
+      <img src="geranium.jpg" alt="Lou's geranium">
+      <h3>Geranium</h3>
+      <p>A cheerful favorite that rewards regular deadheading with blooms throughout the season.</p>
+      <a class="button" href="indoor-plants.html">View Plant</a>
+    </div>
+    <div class="card">
+      <h2>This Week in the Garden</h2>
+      <div class="recent-grid">
+        <img src="garden-photo-1.jpg" alt="">
+        <img src="garden-photo-2.jpg" alt="">
+        <img src="garden-photo-3.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="lower">
+    <div class="card">
+      <h2>Garden Map</h2>
+      <p>Browse the garden by area.</p>
+      <div class="map-grid">
+        <a href="fruit-berries.html">Pergola & Grapes</a>
+        <a href="garden-vegetables.html">Vegetable Garden</a>
+        <a href="fruit-berries.html">Berry Patch</a>
+        <a href="flowers-outdoor.html">Flower Gardens</a>
+      </div>
+    </div>
+    <div class="card upcoming">
+      <h2>Upcoming Tasks</h2>
+      <ul>
+        <li>Check garlic curing progress in about two weeks.</li>
+        <li>Harvest tomatoes, peppers, beans, zucchini and berries often.</li>
+        <li>Inspect squash leaves for eggs, beetles and vine damage.</li>
+        <li>Photograph harvests and record yields in the journal.</li>
+      </ul>
+      <a class="button" href="calendar.html">View Calendar</a>
+    </div>
+  </section>
+
+  <div class="section-title"><h2>Recent Garden Photos</h2></div>
+  <section class="photo-row">
+    <img src="garden-photo-1.jpg" alt="Lou's garden">
+    <img src="garden-photo-2.jpg" alt="Lou's flower garden">
+    <img src="garden-photo-3.jpg" alt="Lou's vegetable garden">
+  </section>
+
+  <section class="search-band">
+    <strong>Search your plants, pests, notes, and more…</strong>
+    <input id="mainSearch" placeholder="Type a plant or topic">
+  </section>
+  <div class="search-results">
+    <a data-search="aloe vera indoor plant" href="indoor-plants.html">Aloe Vera</a>
+    <a data-search="christmas cactus indoor plant" href="indoor-plants.html">Christmas Cactus</a>
+    <a data-search="geranium flower indoor" href="indoor-plants.html">Geranium</a>
+    <a data-search="prayer plant maranta" href="indoor-plants.html">Prayer Plant</a>
+    <a data-search="pumpkin squash vegetable" href="garden-vegetables.html">Pumpkin</a>
+    <a data-search="tomato vegetable fertilizer" href="garden-vegetables.html">Tomato</a>
+    <a data-search="blueberry fruit berry" href="fruit-berries.html">Blueberry</a>
+    <a data-search="peony flower" href="flowers-outdoor.html">Peony</a>
+    <a data-search="weigela tree shrub" href="trees-shrubs.html">Weigela</a>
+    <a data-search="pests insects disease" href="pests.html">Pest Guide</a>
+    <a data-search="calendar seasonal tasks" href="calendar.html">Care Calendar</a>
+    <a data-search="journal notes harvest photos" href="journal.html">Garden Journal</a>
+  </div>
 </main>
-<footer>Lou's Garden Guide · Living website edition</footer>
+
+<footer>Lou’s Garden Guide · Updated July 26, 2026</footer>
+
+<script>
+setTimeout(()=>document.getElementById('splash').classList.add('hide'),3000);
+const searchInputs=[document.getElementById('topSearch'),document.getElementById('mainSearch')];
+const results=[...document.querySelectorAll('.search-results a')];
+function runSearch(v){const q=v.trim().toLowerCase();results.forEach(i=>i.style.display=q&&i.dataset.search.includes(q)?'block':'none')}
+searchInputs.forEach(i=>i.addEventListener('input',e=>runSearch(e.target.value)));
+</script>
 </body>
 </html>
