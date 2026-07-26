@@ -1,0 +1,23 @@
+LOU'S GARDEN GUIDE — GITHUB UPDATE
+Version: July 26, 2026
+
+FILES INCLUDED
+- index.html
+- garden-vegetables.html
+- calendar.html
+- journal.html
+- update.css
+
+UPLOAD STEPS
+1. Open the GitHub repository for Lou's Garden Guide.
+2. Choose Add file, then Upload files.
+3. Upload all five files from this package.
+4. Allow GitHub to replace the four existing HTML files.
+5. Commit the changes.
+6. Open the GitHub Pages website and refresh it.
+
+IMPORTANT
+- Keep your existing styles.css and all other current HTML and image files.
+- The new update.css file adds styling but does not replace styles.css.
+- The journal uses the same browser storage key as the previous version, so saved journal text should remain on the same device and browser.
+- This package does not include photos because the original uploaded website files did not identify the exact image filenames used by the current repository.
