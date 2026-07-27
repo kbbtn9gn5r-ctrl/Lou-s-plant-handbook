@@ -1,4 +1,4 @@
-const CACHE = 'lous-garden-guide-v2-2026-07-27-photo-fix';
+const CACHE = 'lous-garden-guide-2026-07-27-photo-fix-2026-07-27-photo-fix';
 const CORE = [
   './', './index.html', './journal.html', './photo-journal.html',
   './garden-updates-2026.html', './indoor-plants.html',

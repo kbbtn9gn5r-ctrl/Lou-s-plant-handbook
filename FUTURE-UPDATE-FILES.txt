@@ -1,0 +1,6 @@
+Typical future photo update:
+data/site-data.json
+new-photo-01.jpg
+new-photo-02.jpg
+
+Only include app-v3.js or v3.css if the website behavior or appearance changes.

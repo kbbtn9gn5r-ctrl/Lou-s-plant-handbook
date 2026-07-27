@@ -1,0 +1,8 @@
+Lou’s Garden Guide corrections
+- Fixed broken image paths on Vegetables, Flowers, Fruit & Berries, and Harvest Log pages.
+- Restored the full Zebra Haworthia mother plant with pups as the opening project photo.
+- Restored the full jade mother plant before pruning as the Jade project image.
+- Corrected all four Garden Views descriptions.
+- Added Plant Information icons to named plant photographs.
+- Improved horizontal navigation on iPad and smaller screens.
+- Updated service-worker cache version.

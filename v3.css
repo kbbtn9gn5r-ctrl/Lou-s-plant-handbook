@@ -1,0 +1,5 @@
+
+/* Version 3 shared additions */
+.plant-info-link{display:inline-flex;align-items:center;gap:.35rem;margin:.7rem 0 0 .55rem;padding:.42rem .72rem;border-radius:999px;background:#315d3f;color:#fff!important;text-decoration:none;font-size:.8rem;font-weight:800}
+.v3-error{margin:24px;padding:20px;border:1px solid #d9ded1;border-radius:16px;background:#fffdf8;color:#7a2f2f}
+@media(max-width:760px){nav .wrap{scroll-snap-type:x proximity}.plant-info-link{display:flex;width:max-content;margin-left:0}}
