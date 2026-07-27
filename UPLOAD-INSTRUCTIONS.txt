@@ -1,12 +1,16 @@
-LOU'S GARDEN GUIDE — SMALL PHOTO PATCH
+LOU'S GARDEN GUIDE — PHOTO & DESCRIPTION MATCH PATCH
 
-Upload only the HTML files in this ZIP to the main level of the GitHub repository.
-Choose "Replace" when prompted.
+Upload these 3 HTML files to the main level of the GitHub repository and replace the existing files:
 
-This patch does not upload or duplicate any photos.
-It changes the journal pages so they use the photo files already stored in the repository.
-
-Files changed:
-- garden-updates-2026.html
-- photo-journal.html
 - journal.html
+- photo-journal.html
+- garden-updates-2026.html
+
+No photo files need to be uploaded.
+
+Corrections:
+- Detroit beet journal entry now uses the beet-bed photo.
+- Photo Journal now uses Lou's actual garlic and Haworthia photos instead of placeholder cards.
+- Incorrect daylily photo removed from the garlic gallery.
+- Two garden-view photos removed from the blueberry gallery.
+- One vegetable caption corrected to match the visible tomato/vegetable bed.
