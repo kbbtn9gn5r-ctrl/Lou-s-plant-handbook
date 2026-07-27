@@ -1,16 +1,15 @@
-LOU'S GARDEN GUIDE — PHOTO & DESCRIPTION MATCH PATCH
+LOU’S GARDEN GUIDE — PHOTO MATCH & WAYNE WEATHER PATCH
 
-Upload these 3 HTML files to the main level of the GitHub repository and replace the existing files:
-
+Upload only these four HTML files to the main level of GitHub and replace the existing files:
+- index.html
 - journal.html
 - photo-journal.html
 - garden-updates-2026.html
 
-No photo files need to be uploaded.
+No photographs need to be uploaded.
 
-Corrections:
-- Detroit beet journal entry now uses the beet-bed photo.
-- Photo Journal now uses Lou's actual garlic and Haworthia photos instead of placeholder cards.
-- Incorrect daylily photo removed from the garlic gallery.
-- Two garden-view photos removed from the blueberry gallery.
-- One vegetable caption corrected to match the visible tomato/vegetable bed.
+This patch:
+- Corrects the remaining visibly mismatched captions.
+- Removes three photographs that were placed in the wrong sections.
+- Uses Lou’s actual photographs in the small photo journal.
+- Makes the Wayne Weather panel display live temperature, conditions, rain chance, sunrise/sunset, and today’s high/low.
