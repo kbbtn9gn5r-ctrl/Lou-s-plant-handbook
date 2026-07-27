@@ -1,18 +1,17 @@
-LOU'S GARDEN GUIDE — SMALL UPDATE SYSTEM
+LOU'S GARDEN GUIDE — PLANT NAMES & WORKING INFORMATION BUTTONS
 
-UPLOAD THESE 5 FILES TO THE MAIN/ROOT FOLDER OF THE GITHUB REPOSITORY:
-1. garden-updates-2026.html
-2. journal-data.js
-3. journal-renderer.js
-4. service-worker.js
-5. index.html
+Upload the 8 changed website files in this folder to the ROOT (main folder) of the GitHub repository.
+Choose Replace/Overwrite for files with the same names.
 
-Do not delete the existing photographs or plant pages.
-You may leave app-v3.js in place; the journal no longer uses it.
+Files included:
+- journal-data.js
+- journal-renderer.js
+- garden-updates-2026.html
+- garden-vegetables.html
+- fruit-berries.html
+- flowers-outdoor.html
+- service-worker.js
+- jade-cutting-project.html
 
-AFTER THIS SETUP, MOST FUTURE JOURNAL UPDATES REQUIRE ONLY:
-• journal-data.js
-• the newly added photo files
-
-Plant page corrections will require only the individual HTML page being changed.
-There should be no need to upload the complete 200+ file website for normal updates.
+This restores specific plant names and makes each Plant Information button open the matching care section.
+No photographs need to be uploaded for this correction.
