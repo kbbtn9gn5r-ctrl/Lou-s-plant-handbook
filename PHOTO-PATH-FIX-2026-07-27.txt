@@ -1,0 +1,5 @@
+Lou's Garden Guide photo-path repair — July 27, 2026
+
+Fixed 43 broken image references by restoring the updates-2026 folder and copying the referenced vegetable, flower, fruit/berry, and garlic harvest photos into it.
+Verified all local HTML image, stylesheet, script, and page links: 0 missing references.
+Updated the service-worker cache version so iPhone/iPad browsers receive the corrected files.

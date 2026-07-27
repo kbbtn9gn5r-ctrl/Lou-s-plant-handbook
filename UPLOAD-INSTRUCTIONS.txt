@@ -1,15 +1,9 @@
-LOU’S GARDEN GUIDE — PHOTO MATCH & WAYNE WEATHER PATCH
+Lou's Garden Guide - Changed Files Only
 
-Upload only these four HTML files to the main level of GitHub and replace the existing files:
-- index.html
-- journal.html
-- photo-journal.html
-- garden-updates-2026.html
+Upload every file and folder in this package to the root of the GitHub repository.
+Choose Replace when GitHub reports that a file already exists.
+Then commit the changes.
 
-No photographs need to be uploaded.
-
-This patch:
-- Corrects the remaining visibly mismatched captions.
-- Removes three photographs that were placed in the wrong sections.
-- Uses Lou’s actual photographs in the small photo journal.
-- Makes the Wayne Weather panel display live temperature, conditions, rain chance, sunrise/sunset, and today’s high/low.
+Changed existing files: 2
+New files: 51
+Total files to upload: 53

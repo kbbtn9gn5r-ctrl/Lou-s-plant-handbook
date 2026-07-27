@@ -330,7 +330,7 @@ searchInputs.forEach(i=>i.addEventListener('input',e=>runSearch(e.target.value))
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', async () => {
     try {
-      const reg = await navigator.serviceWorker.register('./service-worker.js?v=2.0', {updateViaCache:'none'});
+      const reg = await navigator.serviceWorker.register('./service-worker.js?v=2.1', {updateViaCache:'none'});
       await reg.update();
     } catch (e) { console.log('Service worker update:', e); }
   });
