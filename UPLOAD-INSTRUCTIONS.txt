@@ -1,9 +1,18 @@
-Lou's Garden Guide - Changed Files Only
+LOU'S GARDEN GUIDE — SMALL UPDATE SYSTEM
 
-Upload every file and folder in this package to the root of the GitHub repository.
-Choose Replace when GitHub reports that a file already exists.
-Then commit the changes.
+UPLOAD THESE 5 FILES TO THE MAIN/ROOT FOLDER OF THE GITHUB REPOSITORY:
+1. garden-updates-2026.html
+2. journal-data.js
+3. journal-renderer.js
+4. service-worker.js
+5. index.html
 
-Changed existing files: 2
-New files: 51
-Total files to upload: 53
+Do not delete the existing photographs or plant pages.
+You may leave app-v3.js in place; the journal no longer uses it.
+
+AFTER THIS SETUP, MOST FUTURE JOURNAL UPDATES REQUIRE ONLY:
+• journal-data.js
+• the newly added photo files
+
+Plant page corrections will require only the individual HTML page being changed.
+There should be no need to upload the complete 200+ file website for normal updates.

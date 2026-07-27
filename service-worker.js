@@ -1,7 +1,7 @@
-const CACHE = 'lous-garden-guide-2026-07-27-photo-fix-2026-07-27-photo-fix';
+const CACHE = 'lous-garden-guide-2026-07-27-v5-small-updates';
 const CORE = [
   './', './index.html', './journal.html', './photo-journal.html',
-  './garden-updates-2026.html', './indoor-plants.html',
+  './garden-updates-2026.html', './journal-data.js', './journal-renderer.js', './jade-cutting-project.html', './indoor-plants.html',
   './manifest.webmanifest', './icons/icon-192.png',
   './icons/icon-512.png', './icons/apple-touch-icon.png'
 ];
