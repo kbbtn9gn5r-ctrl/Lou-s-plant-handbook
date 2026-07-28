@@ -1,0 +1,122 @@
+{
+  "projects": [
+    {
+      "version": "4.0",
+      "projectId": "eagle-stump-carving",
+      "title": "Eagle Stump Carving Project",
+      "subtitle": "Day-by-day transformation of a standing tree",
+      "artist": {
+        "name": "Dan Burns",
+        "business": "Burns Bears",
+        "location": "Augusta, Maine",
+        "bio": "Maine chainsaw artist Dan Burns transforms logs and standing stumps into wildlife sculpture. This project follows his creation of a bald eagle overlooking the lake.",
+        "links": [
+          {
+            "label": "Burns Bears on Facebook",
+            "url": "https://www.facebook.com/p/Burns-Bears-Maine-Chainsaw-Carving-100083306779713/"
+          },
+          {
+            "label": "Central Maine profile",
+            "url": "https://www.centralmaine.com/2023/08/05/chainsaw-artist-wows-crowds-at-skowhegans-river-fest/"
+          },
+          {
+            "label": "Kennebec Cabin Company artisans",
+            "url": "https://kennebeccabincompany.com/artisans/"
+          }
+        ]
+      },
+      "hero": "eagle-carving-hero.jpg",
+      "days": [
+        {
+          "day": 1,
+          "status": "complete",
+          "title": "Rough Carving and First Details",
+          "date": "July 28, 2026",
+          "summary": "Day 1 established the eagle\u2019s overall form, head and beak, folded wings, first feather layers, and supporting perch. Additional carving days will be added to this same timeline.",
+          "photos": [
+            {
+              "image": "eagle-carving-hero.jpg",
+              "alt": "Day 1 opening view",
+              "caption": "The carving site overlooking the lake."
+            },
+            {
+              "image": "eagle-day1-03-feather-carving.jpg",
+              "alt": "Early feather carving",
+              "caption": "The first feather layers are cut into the folded wing."
+            },
+            {
+              "image": "eagle-day1-04-scenic-action.jpg",
+              "alt": "Scenic action view",
+              "caption": "Dan shapes the eagle with the Maine landscape behind him."
+            },
+            {
+              "image": "eagle-day1-05-scenic-review.jpg",
+              "alt": "Reviewing the form",
+              "caption": "The artist pauses to study proportion and balance."
+            },
+            {
+              "image": "eagle-day1-06-sawdust.jpg",
+              "alt": "Sawdust in motion",
+              "caption": "Fine shaping sends sawdust across the work platform."
+            },
+            {
+              "image": "eagle-day1-07-wide-worksite.jpg",
+              "alt": "Full worksite",
+              "caption": "A wide view shows the carving, staging, flag, and lake."
+            },
+            {
+              "image": "eagle-day1-08-full-site.jpg",
+              "alt": "Carving from another angle",
+              "caption": "The three-dimensional body and perch become visible."
+            },
+            {
+              "image": "eagle-day1-10-profile.jpg",
+              "alt": "Full profile",
+              "caption": "Head, chest, wing, and tail read clearly as one form."
+            },
+            {
+              "image": "eagle-day1-11-rear-feathers.jpg",
+              "alt": "Rear feather work",
+              "caption": "The folded wing is shaped in three dimensions."
+            },
+            {
+              "image": "eagle-day1-12-mountain-view.jpg",
+              "alt": "Mountain view",
+              "caption": "The developing eagle is framed by the distant landscape."
+            },
+            {
+              "image": "eagle-day1-13-front-detail.jpg",
+              "alt": "Three-quarter view",
+              "caption": "The bird\u2019s stance and layered body feathers are visible."
+            },
+            {
+              "image": "eagle-day1-14-close-action.jpg",
+              "alt": "Close action",
+              "caption": "Careful cuts refine the lower body and surrounding wood."
+            },
+            {
+              "image": "eagle-day1-15-end-day.jpg",
+              "alt": "End of Day 1",
+              "caption": "The bald eagle is unmistakable, with more detail still to come."
+            },
+            {
+              "image": "burns-bear-day1-09-side-cut.jpg",
+              "alt": "Side shaping",
+              "caption": "The supporting wood and perch are narrowed."
+            },
+            {
+              "image": "burns-bear-day1-10-end-progress.jpg",
+              "alt": "End-of-day progress",
+              "caption": "A final Day 1 view records the overall progress."
+            }
+          ]
+        }
+      ],
+      "futureDays": [
+        2,
+        3,
+        4
+      ]
+    }
+  ]
+}
