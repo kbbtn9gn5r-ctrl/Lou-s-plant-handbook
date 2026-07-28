@@ -1,0 +1,10 @@
+Lou's Garden Guide Version 4.1 Repair Update
+Files in this small ZIP replace files with the same names in the website root.
+
+Fixes:
+- Eagle Carving page no longer remains at “Loading project…”
+- Homepage search now finds Garlic, Wild Ginger, Hydrangea, and Eagle Carving
+- Vegetable pages now cover seed/planting through harvest and fall cleanup
+- Flower pages now have Growing, Maintenance, and Seasonal Cleanup tabs
+- Wild Ginger identification, caption, journal link, and care page added
+- Hydrangea directory link and complete care/pruning page added

@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wild Ginger · Lou's Garden Guide</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="v3.css?v=41"><style>
+.care-tabs{margin-top:16px}
+.tab-buttons{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.tab-buttons button{border:1px solid #9eb09f;background:#f4f7f1;color:#244b34;border-radius:999px;padding:9px 14px;font-weight:700;cursor:pointer}
+.tab-buttons button.active{background:#315d3f;color:#fff}
+.tab-panel{display:none;border-top:1px solid #d9e1d6;padding-top:12px}
+.tab-panel.active{display:block}
+.tab-panel h3{color:#315d3f;margin:10px 0 6px}
+.tab-panel ul{margin-top:6px}
+</style></head><body><header class="site-header"><div class="topbar"><a class="brand" href="index.html"><img src="icon-512.png" alt=""><div><strong>Lou’s Garden Guide</strong><small>Wayne, Maine</small></div></a></div></header><main class="wrap"><section class="hero"><div><h1>Wild Ginger</h1><p><em>Asarum</em> species · Shade-loving woodland groundcover</p></div></section><div class="gallery"><figure><img src="flowers-and-perennials-16.jpg" alt="Wild ginger"><figcaption><strong>Wild Ginger</strong><br>Confirmed shaded groundcover in Lou’s garden.</figcaption></figure></div><article class="plant-guide"><h2>Complete Care Guide</h2><div class="care-tabs"><div class="tab-buttons"><button class="active" data-tab="0">Growing</button><button class="" data-tab="1">Maintenance</button><button class="" data-tab="2">Seasonal Cleanup</button></div><div class="tab-panel active" data-tab="0"><ul><li>Plant in partial to full shade in humus-rich, evenly moist, well-drained soil.</li><li>Use as a woodland groundcover beneath trees and shrubs. Plants spread slowly by rhizomes.</li><li>Water regularly during the first growing season and during prolonged drought.</li></ul></div><div class="tab-panel " data-tab="1"><ul><li>Top-dress with leaf mold or compost in spring.</li><li>Keep aggressive weeds out while the patch fills in.</li><li>Usually needs little pruning; remove damaged leaves as needed.</li></ul></div><div class="tab-panel " data-tab="2"><ul><li>Leave healthy fallen leaves as natural winter mulch or apply a thin layer of shredded leaves.</li><li>Remove only diseased or badly damaged foliage in spring before new growth expands.</li></ul></div></div></article><p><a class="button" href="flowers-outdoor.html#wild-ginger">Return to Flowers</a></p></main>
+<script>
+document.querySelectorAll('.care-tabs').forEach(tabs=>{
+  const buttons=[...tabs.querySelectorAll('.tab-buttons button')];
+  const panels=[...tabs.querySelectorAll('.tab-panel')];
+  buttons.forEach(btn=>btn.addEventListener('click',()=>{
+    buttons.forEach(b=>b.classList.toggle('active',b===btn));
+    panels.forEach(p=>p.classList.toggle('active',p.dataset.tab===btn.dataset.tab));
+  }));
+});
+</script>
+</body></html>
