@@ -1,0 +1,15 @@
+Lou's Garden Guide — Full Website Verification
+Date: July 28, 2026
+
+Verified before packaging:
+- 32 HTML pages scanned.
+- All local page links, image links, stylesheets, scripts, icons, and source files checked.
+- 0 missing local references found after corrections.
+- Jade project photo references corrected to existing images.
+- Website opening screen confirmed to display “Lou’s Garden Guide” for approximately 3 seconds.
+- Eagle Carving Day 1 page and selected gallery images included.
+- Dan Burns / Burns Bears artist information included on the carving project page.
+- Local image files checked for readability.
+- JavaScript files passed syntax checks.
+
+Note: External services such as live weather still depend on internet access and the availability of their outside data source.

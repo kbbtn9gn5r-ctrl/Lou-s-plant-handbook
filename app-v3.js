@@ -1,7 +1,7 @@
 (() => {
   const el = document.getElementById('photoJournalApp');
   if (!el) return;
-  fetch('data/site-data.json?v=3', {cache:'no-store'})
+  fetch('data/site-data.json?v=40', {cache:'no-store'})
     .then(r => { if(!r.ok) throw new Error('Could not load site data'); return r.json(); })
     .then(data => {
       const frag=document.createDocumentFragment();

@@ -1,0 +1,8 @@
+Eagle Stump Carving update — July 28, 2026
+
+- Corrected project from a bear carving to a bald eagle carving.
+- Added 15 selected and optimized Day 1 photographs.
+- Added Dan Burns / Burns Bears artist background and source links.
+- Updated homepage navigation and Featured Garden Art card.
+- Preserved the 3-second Lou’s Garden Guide opening splash.
+- Page remains burns-bear.html so existing links continue to work.
