@@ -1,6 +1,6 @@
 {
-  "version": "3.0",
-  "updated": "July 27, 2026",
+  "version": "4.2",
+  "updated": "July 28, 2026",
   "photoJournal": [
     {
       "id": "vegetable-garden",
@@ -218,14 +218,15 @@
         },
         {
           "image": "flowers-and-perennials-15.jpg",
-          "alt": "Rounded-leaf perennial growing among rocks",
-          "caption": "Rounded-leaf perennial growing among rocks",
-          "plantInfo": null
+          "alt": "Wild ginger growing among rocks",
+          "caption": "Wild ginger groundcover among the rocks",
+          "plantInfo": "wild-ginger.html",
+          "plantName": "Wild Ginger"
         },
         {
           "image": "flowers-and-perennials-16.jpg",
-          "alt": "Low green groundcover beside the walkway",
-          "caption": "Low green groundcover beside the walkway",
+          "alt": "Shrub beneath the magnolia",
+          "caption": "Shrub beneath the magnolia — identification being reviewed",
           "plantInfo": null
         },
         {
@@ -242,9 +243,10 @@
         },
         {
           "image": "flowers-and-perennials-19.jpg",
-          "alt": "White-flowering shrub in the evening garden",
-          "caption": "White-flowering shrub in the evening garden",
-          "plantInfo": null
+          "alt": "White-flowering hydrangea",
+          "caption": "White-flowering hydrangea",
+          "plantInfo": "hydrangea.html",
+          "plantName": "Hydrangea"
         },
         {
           "image": "flowers-and-perennials-20.jpg",

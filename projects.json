@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "version": "4.0",
+      "version": "4.2",
       "projectId": "eagle-stump-carving",
       "title": "Eagle Stump Carving Project",
       "subtitle": "Day-by-day transformation of a standing tree",
@@ -30,49 +30,69 @@
         {
           "day": 1,
           "status": "complete",
-          "title": "Rough Carving and First Details",
+          "title": "From First Cuts to a Recognizable Eagle",
           "date": "July 28, 2026",
-          "summary": "Day 1 established the eagle\u2019s overall form, head and beak, folded wings, first feather layers, and supporting perch. Additional carving days will be added to this same timeline.",
+          "summary": "Day 1 began with worksite setup and rough blocking, then progressed through the eagle’s body, folded wings, head, beak, and first feather layers. The photos are arranged in working order so the carving can be followed from the first cuts to the end-of-day form.",
           "photos": [
             {
-              "image": "eagle-carving-hero.jpg",
-              "alt": "Day 1 opening view",
-              "caption": "The carving site overlooking the lake."
+              "image": "burns-bear-day1-03-setup.jpg",
+              "alt": "Worksite setup",
+              "caption": "Scaffolding and tools are positioned around the standing stump."
+            },
+            {
+              "image": "burns-bear-day1-04-first-cuts.jpg",
+              "alt": "First cuts",
+              "caption": "The first large cuts begin removing excess wood."
+            },
+            {
+              "image": "burns-bear-day1-05-layout.jpg",
+              "alt": "Design layout",
+              "caption": "Guide cuts establish the major shapes and proportions."
+            },
+            {
+              "image": "burns-bear-day1-06-chainsaw-cut.jpg",
+              "alt": "Rough blocking",
+              "caption": "Large blocks are removed to open space around the design."
+            },
+            {
+              "image": "burns-bear-day1-08-clearing-block.jpg",
+              "alt": "Clearing waste wood",
+              "caption": "Dan clears another block as the wildlife form begins to emerge."
+            },
+            {
+              "image": "burns-bear-day1-09-side-cut.jpg",
+              "alt": "Side shaping",
+              "caption": "The side profile and supporting trunk are refined."
+            },
+            {
+              "image": "burns-bear-day1-10-end-progress.jpg",
+              "alt": "Early form established",
+              "caption": "The rough form is visible before the feather work begins."
+            },
+            {
+              "image": "eagle-day1-01-action.jpg",
+              "alt": "Eagle shaping begins",
+              "caption": "The eagle body and wing are shaped with the chainsaw."
             },
             {
               "image": "eagle-day1-03-feather-carving.jpg",
-              "alt": "Early feather carving",
+              "alt": "Wing feathers",
               "caption": "The first feather layers are cut into the folded wing."
             },
             {
-              "image": "eagle-day1-04-scenic-action.jpg",
-              "alt": "Scenic action view",
-              "caption": "Dan shapes the eagle with the Maine landscape behind him."
-            },
-            {
-              "image": "eagle-day1-05-scenic-review.jpg",
-              "alt": "Reviewing the form",
-              "caption": "The artist pauses to study proportion and balance."
-            },
-            {
               "image": "eagle-day1-06-sawdust.jpg",
-              "alt": "Sawdust in motion",
-              "caption": "Fine shaping sends sawdust across the work platform."
+              "alt": "Fine shaping",
+              "caption": "Sawdust flies as the body and perch are narrowed."
             },
             {
-              "image": "eagle-day1-07-wide-worksite.jpg",
-              "alt": "Full worksite",
-              "caption": "A wide view shows the carving, staging, flag, and lake."
-            },
-            {
-              "image": "eagle-day1-08-full-site.jpg",
-              "alt": "Carving from another angle",
-              "caption": "The three-dimensional body and perch become visible."
+              "image": "eagle-day1-09-head-emerging.jpg",
+              "alt": "Head and beak",
+              "caption": "The eagle’s head and hooked beak become recognizable."
             },
             {
               "image": "eagle-day1-10-profile.jpg",
               "alt": "Full profile",
-              "caption": "Head, chest, wing, and tail read clearly as one form."
+              "caption": "The head, chest, wing, and tail read clearly as one form."
             },
             {
               "image": "eagle-day1-11-rear-feathers.jpg",
@@ -80,34 +100,14 @@
               "caption": "The folded wing is shaped in three dimensions."
             },
             {
-              "image": "eagle-day1-12-mountain-view.jpg",
-              "alt": "Mountain view",
-              "caption": "The developing eagle is framed by the distant landscape."
-            },
-            {
               "image": "eagle-day1-13-front-detail.jpg",
-              "alt": "Three-quarter view",
-              "caption": "The bird\u2019s stance and layered body feathers are visible."
-            },
-            {
-              "image": "eagle-day1-14-close-action.jpg",
-              "alt": "Close action",
-              "caption": "Careful cuts refine the lower body and surrounding wood."
+              "alt": "Front detail",
+              "caption": "The front body and supporting wood are refined."
             },
             {
               "image": "eagle-day1-15-end-day.jpg",
               "alt": "End of Day 1",
-              "caption": "The bald eagle is unmistakable, with more detail still to come."
-            },
-            {
-              "image": "burns-bear-day1-09-side-cut.jpg",
-              "alt": "Side shaping",
-              "caption": "The supporting wood and perch are narrowed."
-            },
-            {
-              "image": "burns-bear-day1-10-end-progress.jpg",
-              "alt": "End-of-day progress",
-              "caption": "A final Day 1 view records the overall progress."
+              "caption": "The eagle form is established and ready for later detail work."
             }
           ]
         }
