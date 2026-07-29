@@ -1,0 +1,9 @@
+LOU'S GARDEN GUIDE — VERSION 13 CHANGED FILES ONLY
+
+1. Open your existing GitHub repository.
+2. Upload the contents of the Lou-s-plant-handbook-main folder in this ZIP.
+3. Keep every filename and folder path exactly as shown.
+4. When GitHub reports that a file already exists, replace/overwrite it.
+5. This package contains only new or changed files compared with Version 12.
+6. Files included: 39 (35 new, 4 modified).
+7. No files need to be deleted.
