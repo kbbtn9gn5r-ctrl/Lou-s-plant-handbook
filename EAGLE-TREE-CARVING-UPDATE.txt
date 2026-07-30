@@ -1,0 +1,9 @@
+EAGLE TREE CARVING UPDATE — JULY 30, 2026
+
+- Renamed the project “Eagle Tree Carving.”
+- Rebuilt burns-bear.html as a self-contained shareable page with no garden-site navigation.
+- Added an expanded Day 1 through Day 4 photo timeline.
+- Kept the project featured and linked from the Lou’s Garden Guide home page.
+- Updated the Projects page and tree-removal cross-link.
+
+Share the direct GitHub Pages URL ending in: /burns-bear.html

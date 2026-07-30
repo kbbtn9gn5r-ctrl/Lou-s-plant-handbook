@@ -1,10 +1,12 @@
-Lou's Garden Guide — Wood Carving Day 1 Photo Restore
+LOU'S GARDEN GUIDE — SMALL UPDATE PACKAGE
 
-Upload all 11 files in this folder to the ROOT of the GitHub repository.
-Choose Replace/Overwrite when prompted.
+This ZIP contains only files that are new or changed from Lou-s-plant-handbook-main 14.zip.
 
-Files included:
-- burns-bear.html
-- 10 original burns-bear-day1 JPG photographs
+GitHub upload steps:
+1. Open the Lou-s-plant-handbook-main repository.
+2. Choose Add file > Upload files.
+3. Upload the contents of this ZIP into the repository root.
+4. When GitHub asks about existing files, allow the changed files to replace them.
+5. Commit the changes.
 
-This restores the complete original Day 1 setup and first-cuts sequence while retaining the later Day 1 eagle progress and Day 2 photos.
+Do not delete the other website files already in GitHub. They remain unchanged and are still required.
