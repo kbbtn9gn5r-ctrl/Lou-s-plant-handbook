@@ -1,17 +1,10 @@
-LOU'S GARDEN GUIDE — PLANT NAMES & WORKING INFORMATION BUTTONS
+Lou's Garden Guide — Wood Carving Day 1 Photo Restore
 
-Upload the 8 changed website files in this folder to the ROOT (main folder) of the GitHub repository.
-Choose Replace/Overwrite for files with the same names.
+Upload all 11 files in this folder to the ROOT of the GitHub repository.
+Choose Replace/Overwrite when prompted.
 
 Files included:
-- journal-data.js
-- journal-renderer.js
-- garden-updates-2026.html
-- garden-vegetables.html
-- fruit-berries.html
-- flowers-outdoor.html
-- service-worker.js
-- jade-cutting-project.html
+- burns-bear.html
+- 10 original burns-bear-day1 JPG photographs
 
-This restores specific plant names and makes each Plant Information button open the matching care section.
-No photographs need to be uploaded for this correction.
+This restores the complete original Day 1 setup and first-cuts sequence while retaining the later Day 1 eagle progress and Day 2 photos.
