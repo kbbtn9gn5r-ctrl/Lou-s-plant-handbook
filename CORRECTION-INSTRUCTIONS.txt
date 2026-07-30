@@ -1,0 +1,12 @@
+EAGLE TREE CARVING CORRECTION
+
+Upload only these two HTML files to the main folder of your GitHub repository:
+- burns-bear.html
+- index.html
+
+Allow both files to replace the existing versions. Do not delete or re-upload your other website files.
+
+Corrections made:
+- Removed the lily photograph from the carving page.
+- Corrected the carving timeline from four days to three days.
+- Kept the valid progress photographs together under Day 3.
