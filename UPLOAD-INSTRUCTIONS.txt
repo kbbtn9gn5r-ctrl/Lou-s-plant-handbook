@@ -1,17 +1,14 @@
-LOU'S GARDEN GUIDE — AUGUST 1, 2026 UPDATE
+LOU'S GARDEN GUIDE — JADE, BEES & CARVING UPDATE
 
-This package contains only the files changed for today's squash and pumpkin bed update.
+Upload these seven HTML files to the main/root level of the GitHub repository.
+Choose Replace/Overwrite when GitHub reports an existing file with the same name.
 
-Upload every file in this folder to the main/root level of the GitHub repository.
-Choose Replace/Overwrite when prompted.
+garden-pollinators.html is new. The other six files replace existing versions.
+No photo files need to be uploaded with this package because the jade and bee photos are already present in the latest website ZIP (version 15).
 
-New files:
-- august-1-squash-bed-check.html
-- garden-2026-squash-yellowing-01.jpg
-- garden-2026-squash-yellowing-02.jpg
-- garden-2026-squash-yellowing-03.jpg
-
-Updated files:
-- index.html
-- journal.html
-- squash-cucumber.html
+Changes included:
+- Expanded family jade history and 2026 pruning/propagation record.
+- Added a dedicated Bees & Garden Pollination photo page.
+- Linked bee photos from the journal, home page, and late-July update.
+- Corrected the Eagle Tree Carving project description to three documented days.
+- Added the carved lily to the Day 3 description.
