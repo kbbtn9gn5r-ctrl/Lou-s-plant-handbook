@@ -1,12 +1,17 @@
-LOU'S GARDEN GUIDE — SMALL UPDATE PACKAGE
+LOU'S GARDEN GUIDE — AUGUST 1, 2026 UPDATE
 
-This ZIP contains only files that are new or changed from Lou-s-plant-handbook-main 14.zip.
+This package contains only the files changed for today's squash and pumpkin bed update.
 
-GitHub upload steps:
-1. Open the Lou-s-plant-handbook-main repository.
-2. Choose Add file > Upload files.
-3. Upload the contents of this ZIP into the repository root.
-4. When GitHub asks about existing files, allow the changed files to replace them.
-5. Commit the changes.
+Upload every file in this folder to the main/root level of the GitHub repository.
+Choose Replace/Overwrite when prompted.
 
-Do not delete the other website files already in GitHub. They remain unchanged and are still required.
+New files:
+- august-1-squash-bed-check.html
+- garden-2026-squash-yellowing-01.jpg
+- garden-2026-squash-yellowing-02.jpg
+- garden-2026-squash-yellowing-03.jpg
+
+Updated files:
+- index.html
+- journal.html
+- squash-cucumber.html
