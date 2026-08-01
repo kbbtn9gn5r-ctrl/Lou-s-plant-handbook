@@ -5,7 +5,8 @@ Added:
 - American toad photo entry
 - Bumble bee pollinator entry
 - Young fledgling bird entry
-- Baltimore Oriole video entry
+- Baltimore Oriole still image, extracted from Lou’s original video
+- Large video removed to keep the upload small
 - Grape Arbor Improvement project
 - Grape arbor photos, training illustration, care calendar
 - Home-page links and Projects-page link
