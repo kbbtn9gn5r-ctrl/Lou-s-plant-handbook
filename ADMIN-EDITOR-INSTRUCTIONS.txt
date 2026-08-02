@@ -1,0 +1,17 @@
+LOU'S GARDEN GUIDE SITE EDITOR
+
+Open this address after uploading the patch:
+https://kbbtn9gn5r-ctrl.github.io/Lou-s-plant-handbook/admin.html
+
+The editor is intentionally not linked from the public website menu.
+It is private-by-link only, not password-secure, because GitHub Pages is a public static website.
+
+How to use it:
+1. Open admin.html on the live website.
+2. Let it load the current site-content.json file.
+3. Add a project card or journal entry.
+4. Click Download site-content.json.
+5. Upload that downloaded file to the main GitHub folder and replace the old copy.
+6. Upload any new photo files named in the entry.
+
+The editor cannot directly save to GitHub and cannot upload photographs by itself.

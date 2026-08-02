@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Lou's Garden Guide · Site Editor</title>
+<link rel="icon" href="favicon-32.png">
+<link rel="stylesheet" href="style.css">
+<style>
+:root{--green:#315d3f;--cream:#f5f1e6;--line:#d6ddd3;--ink:#243029}
+body{background:var(--cream);color:var(--ink)}
+.editor-wrap{max-width:1050px;margin:0 auto;padding:24px}
+.editor-head{background:var(--green);color:#fff;padding:22px;border-radius:18px;margin-bottom:18px}
+.editor-head h1{margin:0 0 6px}.editor-head p{margin:0;opacity:.92}
+.notice{background:#fff8dc;border:1px solid #decf91;padding:14px 16px;border-radius:14px;margin-bottom:18px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;margin:18px 0;box-shadow:0 4px 16px rgba(0,0,0,.05)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+label{display:block;font-weight:700;margin-bottom:5px}input,textarea,select{width:100%;box-sizing:border-box;border:1px solid #aeb8ae;border-radius:10px;padding:10px 11px;font:inherit;background:#fff}textarea{min-height:100px;resize:vertical}
+.full{grid-column:1/-1}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.btn{border:0;border-radius:999px;padding:10px 16px;font-weight:700;cursor:pointer}.primary{background:var(--green);color:#fff}.secondary{background:#e6eee7;color:var(--green)}.danger{background:#f6dddd;color:#7d2424}.status{margin-top:12px;font-weight:700}.small{font-size:.92rem;color:#56635b}.json-box{min-height:280px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86rem}.item-list{display:grid;gap:9px;margin-top:12px}.item{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#f7f9f6;border:1px solid var(--line);border-radius:12px;padding:10px 12px}.item strong{display:block}.item small{color:#667067}.item button{white-space:nowrap}
+@media(max-width:720px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.editor-wrap{padding:12px}.item{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<main class="editor-wrap">
+<section class="editor-head"><h1>Lou's Garden Guide Site Editor</h1><p>Create project and journal entries, then download an updated <strong>site-content.json</strong> file.</p></section>
+<div class="notice"><strong>Important:</strong> GitHub Pages cannot save changes directly. This editor works in your browser and downloads the updated file for you to upload to GitHub. The page is not linked from the public menu, but it is not password-secure.</div>
+<section class="panel">
+<h2>1. Load current website content</h2>
+<p class="small">The editor will try to load <code>site-content.json</code> automatically. You can reload it at any time.</p>
+<div class="actions"><button class="btn primary" id="loadBtn">Load current content</button><button class="btn secondary" id="backupBtn">Download backup</button></div>
+<div class="status" id="status">Waiting to load…</div>
+</section>
+<section class="panel">
+<h2>2. Add a project card</h2>
+<div class="grid">
+<div><label for="pTitle">Project title</label><input id="pTitle"></div>
+<div><label for="pEyebrow">Short status line</label><input id="pEyebrow" placeholder="In progress · Day 4 added"></div>
+<div class="full"><label for="pDescription">Description</label><textarea id="pDescription"></textarea></div>
+<div><label for="pImage">Image filename</label><input id="pImage" placeholder="example-photo.jpg"></div>
+<div><label for="pAlt">Image description</label><input id="pAlt"></div>
+<div><label for="pHref">Project page filename</label><input id="pHref" placeholder="my-project.html"></div>
+<div><label for="pButton">Button text</label><input id="pButton" placeholder="Open Project"></div>
+</div>
+<div class="actions"><button class="btn primary" id="addProjectBtn">Add project</button><button class="btn secondary" id="clearProjectBtn">Clear form</button></div>
+</section>
+<section class="panel">
+<h2>3. Add a garden journal entry</h2>
+<div class="grid">
+<div><label for="jDate">Date</label><input id="jDate" type="date"></div>
+<div><label for="jTitle">Title</label><input id="jTitle"></div>
+<div class="full"><label for="jDescription">Description</label><textarea id="jDescription"></textarea></div>
+<div><label for="jImage">Image filename</label><input id="jImage" placeholder="example-photo.jpg"></div>
+<div><label for="jAlt">Image description</label><input id="jAlt"></div>
+<div><label for="jHref">Related page filename</label><input id="jHref" placeholder="plant-or-project.html"></div>
+<div><label for="jButton">Button text</label><input id="jButton" placeholder="View Entry"></div>
+</div>
+<div class="actions"><button class="btn primary" id="addJournalBtn">Add journal entry</button><button class="btn secondary" id="clearJournalBtn">Clear form</button></div>
+</section>
+<section class="panel">
+<h2>4. Review entries</h2>
+<h3>Projects</h3><div id="projectsList" class="item-list"></div>
+<h3>Journal</h3><div id="journalList" class="item-list"></div>
+</section>
+<section class="panel">
+<h2>5. Download the updated file</h2>
+<p class="small">Upload the downloaded <code>site-content.json</code> to the main GitHub folder and replace the existing copy.</p>
+<div class="actions"><button class="btn primary" id="downloadBtn">Download site-content.json</button><button class="btn secondary" id="copyBtn">Copy JSON</button></div>
+<textarea id="jsonPreview" class="json-box" aria-label="JSON preview"></textarea>
+</section>
+<p><a href="index.html">← Return to Lou's Garden Guide</a></p>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>
