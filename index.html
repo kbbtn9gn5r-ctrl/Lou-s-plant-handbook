@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
+<head><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#315D3F">
@@ -218,7 +218,7 @@ footer{text-align:center;padding:28px;color:#6B756E}
 
   
 <section class="photo-update-card"><div class="photo-update-copy"><div class="eyebrow-small">New August 1 garden health check</div><h2>Squash &amp; Pumpkin Bed Update</h2><p>Three new photographs document widespread yellowing, continued flowering, recent Flower-tone use, and the next watering and feeding checks.</p><a class="button" href="august-1-squash-bed-check.html">Open the Squash Bed Update</a></div><div class="photo-update-images"><img src="garden-2026-squash-yellowing-01.jpg" alt="Yellowing squash and pumpkin vines"><img src="garden-2026-squash-yellowing-02.jpg" alt="Mixed vegetable beds and squash vines"><img src="garden-2026-squash-yellowing-03.jpg" alt="Squash beds with blossoms"></div></section><section class="photo-update-card"><div class="photo-update-copy"><div class="eyebrow-small">New July 29 photo journal</div><h2>Late-July Garden Update</h2><p>New labeled photographs document cucumbers, peas, squash, broccoli, peppers, kale, Bangor and Yaya carrots, rhubarb, grapes, blackberries, hops, and bees carrying pollen.</p><a class="button" href="late-july-garden-2026.html">Open the Late-July Gallery</a></div><div class="photo-update-images"><img src="garden-2026-blackberries.jpg" alt="Blackberries ripening"><img src="garden-2026-peppers.jpg" alt="King of the North peppers"><img src="garden-2026-pollen-bee.jpg" alt="Pollen-covered bee in squash blossom"></div></section>
-<section class="photo-update-card"><div class="photo-update-copy"><div class="eyebrow-small">Featured garden art project</div><h2>Eagle Tree Carving · Day 4 Added</h2><p>Follow chainsaw artist Dan Burns of Burns Bears as he transforms the preserved tree into a bald eagle and woodland wildlife sculpture. The expanded, self-contained project page now follows the work through Day 4. The sculpture is still in progress, with additional detailing and finishing work to come.</p><a class="button" href="burns-bear.html">View Eagle Tree Carving</a></div><div class="photo-update-images" style="display:block"><img src="eagle-carving-hero.jpg" alt="Dan Burns carving a bald eagle from the standing stump" style="width:min(100%,520px);aspect-ratio:4/3;object-fit:cover;margin:auto;display:block"></div></section>
+<section class="photo-update-card"><div class="photo-update-copy"><div class="eyebrow-small">Featured garden art project</div><h2>Eagle Tree Carving · Day 4 Added</h2><p>Follow chainsaw artist Dan Burns of Burns Bears as he transforms the preserved tree into a bald eagle and woodland wildlife sculpture. The expanded, self-contained project page now follows the work through Day 4. The sculpture is still in progress, with additional detailing and finishing work to come.</p><a class="button" href="burns-bear.html?v=18">View Eagle Tree Carving</a></div><div class="photo-update-images" style="display:block"><img src="eagle-carving-hero.jpg" alt="Dan Burns carving a bald eagle from the standing stump" style="width:min(100%,520px);aspect-ratio:4/3;object-fit:cover;margin:auto;display:block"></div></section>
 <section class="photo-update-card"><div class="photo-update-copy"><div class="eyebrow-small">New August 2026 section</div><h2>Garden Friends</h2><p>Meet the beneficial wildlife that shares the garden: an American toad, bumble bees, a young fledgling, and a Baltimore Oriole visiting the feeder.</p><a class="button" href="garden-friends.html">Meet the Garden Friends</a></div><div class="photo-update-images"><img src="garden-friend-american-toad-01.jpg" alt="American toad in garden mulch"><img src="garden-friend-bumble-bee-01.jpg" alt="Bumble bee on blossoms"><img src="garden-friend-young-bird.jpg" alt="Young bird on garden fence"></div></section><section class="photo-update-card"><div class="photo-update-copy"><div class="eyebrow-small">New grape project</div><h2>Improving the Grape Arbor</h2><p>The arbor structure will stay. The new plan focuses on gradual canopy thinning now, dormant pruning in late winter, evenly spaced permanent arms, and improved training for better fruit production.</p><a class="button" href="grape-arbor-project.html">Open the Grape Arbor Plan</a></div><div class="photo-update-images"><img src="grape-arbor-overview.jpg" alt="Lou's grape arbor"><img src="grape-arbor-canopy.jpg" alt="Dense grape canopy"><img src="grape-arbor-training-plan.png" alt="Grape arbor training plan"></div></section><div class="section-title"><h2>Explore the Garden</h2><p>Browse by plant type.</p></div>
   <section class="categories">
     <a class="category" href="indoor-plants.html"><img src="prayer-plant.jpg" alt=""><div class="body"><strong>Indoor Plants</strong><small>Houseplants and indoor care</small></div></a>
@@ -302,7 +302,7 @@ footer{text-align:center;padding:28px;color:#6B756E}
     <a data-search="garlic hardneck garlic harvest curing fall planting vegetable" href="garden-vegetables.html#garlic">Garlic</a>
     <a data-search="wild ginger asarum shade groundcover flower perennial" href="wild-ginger.html">Wild Ginger</a>
     <a data-search="hydrangea shrub flowers pruning maintenance" href="hydrangea.html">Hydrangea</a>
-    <a data-search="eagle carving dan burns burns bears project chainsaw" href="burns-bear.html">Eagle Tree Carving</a>
+    <a data-search="eagle carving dan burns burns bears project chainsaw" href="burns-bear.html?v=18">Eagle Tree Carving</a>
     <a data-search="blueberry fruit berry" href="fruit-berries.html">Blueberry</a>
     <a data-search="peony flower" href="flowers-outdoor.html">Peony</a>
     <a data-search="weigela tree shrub" href="trees-shrubs.html">Weigela</a>
@@ -326,7 +326,7 @@ searchInputs.forEach(i=>i.addEventListener('input',e=>runSearch(e.target.value))
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', async () => {
     try {
-      const reg = await navigator.serviceWorker.register('./service-worker.js?v=5', {updateViaCache:'none'});
+      const reg = await navigator.serviceWorker.register('./service-worker.js?v=18', {updateViaCache:'none'});
       await reg.update();
     } catch (e) { console.log('Service worker update:', e); }
   });
@@ -357,5 +357,6 @@ if ('serviceWorker' in navigator) {
 })();
 </script>
 
+  <script src="nav-helper.js?v=1"></script>
 </body>
 </html>
