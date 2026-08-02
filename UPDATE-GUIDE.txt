@@ -1,0 +1,34 @@
+LOU'S GARDEN GUIDE — SMALLER UPDATE SYSTEM (VERSION 2.1)
+
+What changed
+------------
+The Projects page and Garden Journal now read their cards from one file:
+
+  site-content.json
+
+This means most future additions do NOT require uploading the entire website.
+
+Typical future journal update
+-----------------------------
+Upload only:
+1. The new photograph(s)
+2. site-content.json
+
+Typical future project-card update
+----------------------------------
+Upload only:
+1. The project's new photograph(s)
+2. site-content.json
+3. The individual project page, only when that page itself changed
+
+Files that normally stay unchanged
+----------------------------------
+- projects.html
+- journal.html
+- site-content-renderer.js
+- style.css
+- most plant pages and old photographs
+
+Important
+---------
+Upload patch files into the main GitHub repository folder and choose Replace when a file already exists. Do not delete old photographs unless they are known duplicates or incorrect.

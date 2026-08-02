@@ -1,0 +1,155 @@
+{
+  "version": "2.1",
+  "updated": "2026-08-02",
+  "projectCards": [
+    {
+      "eyebrow": "Featured houseplant project",
+      "title": "Jade Pruning Project",
+      "description": "The family jade story, the actual mother plant before and after the June 29 pruning, and the cuttings and pups being raised to share.",
+      "image": "jade-plant-1.jpg",
+      "alt": "Jade mother plant",
+      "href": "jade-cutting-project.html",
+      "button": "Open Jade Project",
+      "tone": "green"
+    },
+    {
+      "title": "Haworthia & Pups",
+      "description": "A corrected photo timeline from the crowded mother plant through separation and repotting.",
+      "image": "home-haworthia-repotted.jpg",
+      "alt": "Repotted Haworthia pups",
+      "href": "haworthia.html",
+      "button": "Open Haworthia Project"
+    },
+    {
+      "eyebrow": "In progress · Day 4 added",
+      "title": "Eagle Tree Carving",
+      "description": "Four documented carving days of Dan Burns transforming the preserved tree into a bald eagle and woodland-wildlife sculpture. Day 4 is included, and the project remains in progress.",
+      "image": "eagle-day4-2026-08-02-lake-view.jpg",
+      "alt": "Day 4 eagle tree carving overlooking the lake",
+      "href": "burns-bear.html?v=19",
+      "button": "Open Eagle Tree Carving",
+      "tone": "gold"
+    },
+    {
+      "title": "Tree Removal – Poulin Tree",
+      "description": "The original tree, bucket-truck work, limb removal, and preparation of the tall trunk for the carving.",
+      "image": "tree-removal-property-view.jpg",
+      "alt": "Bucket truck removing upper limbs",
+      "href": "tree-removal.html",
+      "button": "Open Tree Removal Project"
+    },
+    {
+      "eyebrow": "Garden structure project",
+      "title": "Grape Arbor Improvement",
+      "description": "A photo-based pruning and training plan to open the canopy, improve airflow, and produce larger, sweeter grape crops without rebuilding the arbor.",
+      "image": "grape-arbor-overview.jpg",
+      "alt": "Lou's grape arbor",
+      "href": "grape-arbor-project.html",
+      "button": "Open Grape Arbor Project",
+      "tone": "green"
+    }
+  ],
+  "journalEntries": [
+    {
+      "date": "August 1, 2026",
+      "title": "Squash & Pumpkin Bed Check",
+      "summary": "Widespread yellowing was recorded while vines continued flowering and setting fruit. Flower-tone had been applied about three weeks earlier. Soil moisture, nutrient demand, and magnesium uptake will be checked before additional feeding.",
+      "category": "Vegetables · Health Check",
+      "image": "garden-2026-squash-yellowing-01.jpg",
+      "alt": "Squash and pumpkin vines with widespread pale foliage",
+      "href": "august-1-squash-bed-check.html",
+      "button": "Open full update"
+    },
+    {
+      "date": "July 31 & August 1, 2026",
+      "title": "Epsom Salt Applied to Vine Crops",
+      "summary": "Pumpkins, squash, and cucumbers received one tablespoon of Epsom salt per gallon of water. The solution was applied at the plant bases without wetting the leaves.",
+      "category": "Garden To-Do · Completed",
+      "image": "garden-2026-squash-yellowing-03.jpg",
+      "alt": "Squash and cucumber beds",
+      "keywords": "epsom salt pumpkin squash cucumber magnesium milk jug base watering"
+    },
+    {
+      "date": "August 7–8, 2026",
+      "title": "Flower-tone for Vine Crops",
+      "summary": "Planned application for pumpkins, winter squash, summer squash, and cucumbers. Apply around the drip line, keep fertilizer away from stems, and water it in thoroughly.",
+      "category": "Garden To-Do · Scheduled",
+      "image": "garden-2026-squash-yellowing-02.jpg",
+      "alt": "Vine crops growing in the vegetable garden",
+      "keywords": "flower tone fertilizer pumpkin squash cucumber schedule"
+    },
+    {
+      "date": "July 26, 2026",
+      "title": "Garlic Harvest & Curing",
+      "summary": "Garlic was harvested and placed in a shaded, airy location to cure for roughly two to four weeks.",
+      "category": "Garlic · Harvest",
+      "image": "2026-garlic-harvest-01.jpg",
+      "alt": "Garlic Harvest and Curing"
+    },
+    {
+      "date": "July 26, 2026",
+      "title": "Detroit Beet Harvest",
+      "summary": "Detroit beets were checked and the largest roots harvested first. Remaining plants should stay evenly moist.",
+      "category": "Vegetables · Harvest",
+      "image": "vegetable-garden-13.jpg",
+      "alt": "Detroit Beet Harvest"
+    },
+    {
+      "date": "July 26, 2026",
+      "title": "Blueberry Crop Update",
+      "summary": "Blueberry bushes showed a heavy crop with ripe and ripening fruit. Continue harvesting every two to three days and maintain bird protection.",
+      "category": "Berries · Progress",
+      "image": "fruit-and-berry-patch-01.jpg",
+      "alt": "Blueberry Crop Update"
+    },
+    {
+      "date": "Started June 18, 2026",
+      "title": "Blueberry Propagation",
+      "summary": "Cuttings remain under humidity domes with green stems and firm leaves. Keep in bright indirect light and vent slightly if condensation is excessive.",
+      "category": "Propagation · Blueberries",
+      "image": "indoor-plants-and-propagation-11.jpg",
+      "alt": "Blueberry Propagation",
+      "keywords": "blueberry cuttings humidity dome heat mat roots propagation project"
+    },
+    {
+      "date": "July 2026",
+      "title": "Zebra Haworthia Pup Project",
+      "summary": "The mother plant was divided, pups were separated, and the new plants were potted individually.",
+      "category": "Houseplants · Propagation",
+      "image": "haworthia-new-08.jpg",
+      "alt": "Zebra Haworthia Pup Project",
+      "href": "haworthia.html",
+      "button": "Open full timeline"
+    },
+    {
+      "date": "June 29, 2026",
+      "title": "Jade Pruning Project",
+      "summary": "The family mother jade was pruned to encourage branching. Monthly photographs will be used to compare new growth and follow the saved cuttings.",
+      "category": "Houseplants · Pruning & Family Story",
+      "image": "jade-mother-09.jpg",
+      "alt": "Jade Pruning Project",
+      "href": "jade-cutting-project.html",
+      "button": "Open family jade story"
+    },
+    {
+      "date": "July 29, 2026",
+      "title": "Bees & Garden Pollination",
+      "summary": "Close-up photographs show bees working squash blossoms, including a bee covered in yellow pollen.",
+      "category": "Garden Friends · Pollinators",
+      "image": "garden-2026-pollen-bee.jpg",
+      "alt": "Pollen-covered bee in a squash blossom",
+      "href": "garden-pollinators.html",
+      "button": "Open pollination story"
+    },
+    {
+      "date": "August 2, 2026",
+      "title": "Woodland Habitat Carving · Day 4",
+      "summary": "Day 4 added more feather, fur, and wildlife detail. The carving remains in progress, with finishing and additional refinement still to come.",
+      "category": "Projects · In Progress",
+      "image": "eagle-day4-2026-08-02-lake-view.jpg",
+      "alt": "Day 4 woodland habitat carving",
+      "href": "burns-bear.html?v=19",
+      "button": "Open Day 4 project"
+    }
+  ]
+}
