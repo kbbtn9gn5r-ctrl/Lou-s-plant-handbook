@@ -1,6 +1,6 @@
 {
   "version": "2.1",
-  "updated": "2026-08-02",
+  "updated": "2026-08-07",
   "projectCards": [
     {
       "eyebrow": "Featured houseplant project",
@@ -21,12 +21,12 @@
       "button": "Open Haworthia Project"
     },
     {
-      "eyebrow": "In progress · Day 4 added",
+      "eyebrow": "Completed · August 7, 2026",
       "title": "Eagle Tree Carving",
-      "description": "Four documented carving days of Dan Burns transforming the preserved tree into a bald eagle and woodland-wildlife sculpture. Day 4 is included, and the project remains in progress.",
-      "image": "eagle-day4-2026-08-02-lake-view.jpg",
-      "alt": "Day 4 eagle tree carving overlooking the lake",
-      "href": "burns-bear.html?v=19",
+      "description": "Six documented days of Dan Burns transforming the preserved tree into a finished bald eagle and woodland-wildlife sculpture, including the final coloring, protective finish, and completed 360° gallery.",
+      "image": "eagle-day6-complete-hero.jpg",
+      "alt": "Completed woodland habitat tree carving in the garden",
+      "href": "burns-bear.html?v=20",
       "button": "Open Eagle Tree Carving",
       "tone": "gold"
     },
