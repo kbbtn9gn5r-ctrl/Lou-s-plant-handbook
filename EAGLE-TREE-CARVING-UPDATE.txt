@@ -1,9 +1,6 @@
-EAGLE TREE CARVING UPDATE — JULY 30, 2026
+Eagle Tree Carving update — Day 5 restored
+August 2026
 
-- Renamed the project “Eagle Tree Carving.”
-- Rebuilt burns-bear.html as a self-contained shareable page with no garden-site navigation.
-- Added an expanded Day 1 through Day 4 photo timeline.
-- Kept the project featured and linked from the Lou’s Garden Guide home page.
-- Updated the Projects page and tree-removal cross-link.
-
-Share the direct GitHub Pages URL ending in: /burns-bear.html
+Day 5 is now fully documented with 10 photographs from the rainy workday.
+The Day 5 chapter sits between Day 4 and the completed Day 6 section.
+Day 5 emphasizes continued work in the rain, bear/eagle/owl refinement, fine-detail carving, and end-of-day progress.
