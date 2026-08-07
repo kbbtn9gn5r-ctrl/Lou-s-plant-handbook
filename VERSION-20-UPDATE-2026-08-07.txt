@@ -1,13 +1,15 @@
-Lou's Garden Guide - Version 20 Update - August 7, 2026
+Lou's Garden Guide — Version 20 carving update
+Date: August 7, 2026
 
-Eagle Tree Carving / Woodland Habitat Sculpture
-- Project status changed from In Progress to Complete.
-- Added Day 5 rainy-day refinement narrative.
-- Added Day 6 final coloring and finishing sequence.
-- Added completed sculpture gallery and detail views.
-- Added final bald eagle, black bear, owl, bluebird, cardinal, mouse and scenic photographs.
-- Updated carving hero image to the completed sculpture in evening light.
-- Updated home-page feature and project card to reflect completion after six days.
-- Dedicated carving page remains shareable independently from the full Garden Guide.
+Completed:
+- Carving timeline expanded to Day 1 through Day 6.
+- Day 1: 10 photos.
+- Day 2: 10 photos.
+- Day 3: 8 photos.
+- Day 4: 10 photos.
+- Day 5 retained as a work day and correctly described as steady rain throughout the day.
+- Day 6: 10 web-optimized completion photos.
+- New completed-sculpture hero image and final gallery.
+- Project marked complete in the home-page/project metadata.
 
-Upload the files in the update ZIP to the root of the existing GitHub repository and choose Replace for files that already exist.
+Important: Day 5 rain photographs were not present in the supplied Version 19 ZIP or current attached files. The Day 5 section is correctly placed and ready for those originals. No sunny Day 6 photos were mislabelled as Day 5.

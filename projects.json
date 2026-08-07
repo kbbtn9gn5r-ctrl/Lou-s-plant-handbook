@@ -1,10 +1,10 @@
 {
   "projects": [
     {
-      "version": "4.2",
+      "version": "5.0",
       "projectId": "eagle-stump-carving",
-      "title": "Eagle Stump Carving Project",
-      "subtitle": "Day-by-day transformation of a standing tree",
+      "title": "Woodland Habitat Tree Carving",
+      "subtitle": "Six-day transformation of a standing tree",
       "artist": {
         "name": "Dan Burns",
         "business": "Burns Bears",
@@ -112,11 +112,8 @@
           ]
         }
       ],
-      "futureDays": [
-        2,
-        3,
-        4
-      ]
+      "status": "complete",
+      "completed": "August 2026"
     }
   ]
 }
