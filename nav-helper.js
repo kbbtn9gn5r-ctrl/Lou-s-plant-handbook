@@ -1,7 +1,62 @@
 (function () {
   'use strict';
 
+  function isHomePage() {
+    const path = window.location.pathname.replace(/\/+$/, '');
+    return path === '' || path.endsWith('/index.html') || path.endsWith('/Lou-s-plant-handbook');
+  }
+
+  function updateHomePage() {
+    if (!isHomePage()) return;
+
+    const todayItems = document.querySelectorAll('.today-strip .task-list li');
+    const todayText = [
+      '<strong>Sunflower:</strong> approximately 12 feet tall; continue documenting it while it remains at peak height.',
+      '<strong>Blueberry cuttings:</strong> continue gradual hardening-off and watch closely for wilting.',
+      'Harvest ripe tomatoes and King of the North peppers regularly.',
+      'Inspect pumpkin, squash, and cucumber foliage for beetles, eggs, and new feeding damage.'
+    ];
+    todayItems.forEach((item, i) => { if (todayText[i]) item.innerHTML = todayText[i]; });
+
+    const banner = document.querySelector('.update-banner');
+    if (banner) {
+      banner.setAttribute('aria-label', 'Latest garden update dated August 18, 2026');
+      const heading = banner.querySelector('h2');
+      const summary = banner.querySelector('p');
+      if (heading) heading.textContent = 'Latest Garden Update · August 18, 2026';
+      if (summary) summary.textContent = 'Today’s garden photos document blueberry propagation hardening-off, dahlias, tomatoes, peppers, pumpkin, carrots, marigolds, and an approximately 12-foot sunflower.';
+
+      const statuses = banner.querySelectorAll('.status-item');
+      const statusText = [
+        '<strong>🌻 Sunflower</strong>Approximately 12 feet tall and still a major August garden feature.<br><span>Peak height</span>',
+        '<strong>🫐 Blueberry Cuttings</strong>Continue gradual hardening-off and increase uncovered time only when the cuttings stay firm.<br><span>Hardening off</span>',
+        '<strong>🌺 Dahlias</strong>Flowering now; keep deadheading and watch moisture during dry weather.<br><span>Blooming</span>',
+        '<strong>🍅 Tomatoes</strong>Heavy crop developing; harvest ripe fruit regularly and maintain even watering.<br><span>Fruiting</span>',
+        '<strong>🫑 King of the North</strong>Peppers are setting and sizing up; harvest mature fruit to keep production moving.<br><span>Fruiting</span>',
+        '<strong>🎃 Pumpkins &amp; Squash</strong>Continue inspecting leaves for beetles, eggs, and feeding damage; water at soil level.<br><span>Pest watch</span>'
+      ];
+      statuses.forEach((item, i) => { if (statusText[i]) item.innerHTML = statusText[i]; });
+    }
+
+    const upcomingItems = document.querySelectorAll('.upcoming ul li');
+    const upcomingText = [
+      'Continue blueberry-cutting hardening-off gradually.',
+      'Harvest tomatoes and peppers as they mature.',
+      'Inspect squash, pumpkin, and cucumber leaves for beetles, eggs, and vine damage.',
+      'Photograph the 12-foot sunflower and late-summer harvests for the journal.'
+    ];
+    upcomingItems.forEach((item, i) => { if (upcomingText[i]) item.textContent = upcomingText[i]; });
+
+    const footer = document.querySelector('footer');
+    if (footer) footer.textContent = 'Lou’s Garden Guide · Updated August 18, 2026';
+  }
+
   function addNavigation() {
+    updateHomePage();
+
+    // The Home screen already has full site navigation, so do not show
+    // the floating Back and Home controls there.
+    if (isHomePage()) return;
     if (document.getElementById('louQuickNavigation')) return;
 
     const style = document.createElement('style');
