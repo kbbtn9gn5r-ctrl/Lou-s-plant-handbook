@@ -1,6 +1,6 @@
 {
   "version": "2.2",
-  "updated": "2026-08-07",
+  "updated": "2026-08-18",
   "projectCards": [
     {
       "eyebrow": "Featured houseplant project",
@@ -50,6 +50,17 @@
     }
   ],
   "journalEntries": [
+    {
+      "date": "August 18, 2026",
+      "title": "Mid-August Garden Update",
+      "summary": "Blueberry cuttings continued hardening-off; dahlias, tomatoes, peppers, pumpkins, carrots and marigolds were documented. The tallest sunflower measured approximately 12 feet.",
+      "category": "Garden Journal · Progress",
+      "image": "vegetable-garden-09.jpg",
+      "alt": "Tall sunflower in the vegetable garden",
+      "href": "august-18-2026-garden-update.html",
+      "button": "Open August 18 update",
+      "keywords": "sunflower 12 feet blueberry propagation hardening off dahlias tomatoes peppers pumpkin carrots marigolds milkweed tussock moth"
+    },
     {
       "date": "August 1, 2026",
       "title": "Squash & Pumpkin Bed Check",
