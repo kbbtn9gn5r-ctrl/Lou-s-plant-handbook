@@ -1,9 +1,9 @@
-const CACHE = 'lous-garden-guide-2026-08-02-v21-modular-content';
+const CACHE = 'lous-garden-guide-2026-08-19-v22';
 const CORE = [
   './', './index.html', './journal.html', './photo-journal.html',
   './garden-updates-2026.html', './journal-data.js', './journal-renderer.js', './site-content.json', './site-content-renderer.js', './projects.html', './jade-cutting-project.html', './indoor-plants.html',
-  './manifest.webmanifest', './icons/icon-192.png',
-  './icons/icon-512.png', './icons/apple-touch-icon.png'
+  './manifest.webmanifest', './icon-192.png',
+  './icon-512.png', './apple-touch-icon.png'
 ];
 
 self.addEventListener('install', event => {
