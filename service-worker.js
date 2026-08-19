@@ -1,7 +1,7 @@
-const CACHE = 'lous-garden-guide-2026-08-19-v22';
+const CACHE = 'lous-garden-guide-2026-08-19-v23';
 const CORE = [
   './', './index.html', './journal.html', './photo-journal.html',
-  './garden-updates-2026.html', './journal-data.js', './journal-renderer.js', './site-content.json', './site-content-renderer.js', './projects.html', './jade-cutting-project.html', './indoor-plants.html',
+  './garden-updates-2026.html', './journal-data.js', './journal-fixes-2026-08-19.js', './journal-renderer.js', './site-content.json', './site-content-renderer.js', './projects.html', './jade-cutting-project.html', './indoor-plants.html',
   './manifest.webmanifest', './icon-192.png',
   './icon-512.png', './apple-touch-icon.png'
 ];
