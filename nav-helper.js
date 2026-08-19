@@ -6,6 +6,126 @@
     return path === '' || path.endsWith('/index.html') || path.endsWith('/Lou-s-plant-handbook');
   }
 
+  function weatherCodeToText(code) {
+    const map = {
+      0: 'Clear', 1: 'Mostly clear', 2: 'Partly cloudy', 3: 'Cloudy',
+      45: 'Fog', 48: 'Rime fog', 51: 'Light drizzle', 53: 'Drizzle', 55: 'Heavy drizzle',
+      56: 'Freezing drizzle', 57: 'Freezing drizzle', 61: 'Light rain', 63: 'Rain', 65: 'Heavy rain',
+      66: 'Freezing rain', 67: 'Freezing rain', 71: 'Light snow', 73: 'Snow', 75: 'Heavy snow',
+      77: 'Snow grains', 80: 'Rain showers', 81: 'Rain showers', 82: 'Heavy showers',
+      85: 'Snow showers', 86: 'Snow showers', 95: 'Thunderstorms', 96: 'Thunderstorms', 99: 'Thunderstorms'
+    };
+    return map[code] || 'Forecast';
+  }
+
+  function shortDay(dateString, index) {
+    if (index === 0) return 'Today';
+    const d = new Date(dateString + 'T12:00:00');
+    return d.toLocaleDateString('en-US', { weekday: 'short' });
+  }
+
+  function addHomeEnhancements() {
+    if (!isHomePage()) return;
+
+    const style = document.createElement('style');
+    style.id = 'louHomeEnhancements';
+    style.textContent = `
+      .hero:before {
+        background: linear-gradient(90deg, rgba(22,48,31,.08) 0%, rgba(22,48,31,.04) 38%, rgba(22,48,31,.015) 68%, rgba(22,48,31,0) 100%) !important;
+      }
+      .hero-panel h1 { text-shadow: 0 3px 18px rgba(0,0,0,.72) !important; }
+      .hero-panel p, .hero-panel .quote, .hero-panel .eyebrow { text-shadow: 0 2px 9px rgba(0,0,0,.72) !important; }
+      .three-day-forecast {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0,1fr));
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .forecast-day {
+        background: rgba(255,253,248,.78);
+        border: 1px solid #E4DAB8;
+        border-radius: 12px;
+        padding: 10px 8px;
+        text-align: center;
+      }
+      .forecast-day strong {
+        display: block;
+        font: 700 .95rem -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+        color: #315D3F;
+        margin-bottom: 3px;
+      }
+      .forecast-day .forecast-condition { font-size: .78rem; min-height: 2.1em; color: #4f5d53; }
+      .forecast-day .forecast-temp { font-weight: 800; margin-top: 5px; }
+      .forecast-day .forecast-rain { font-size: .78rem; color: #59695d; margin-top: 4px; }
+      .forecast-heading {
+        margin-top: 14px;
+        font-weight: 800;
+        color: #315D3F;
+        font-size: .9rem;
+      }
+      @media(max-width:520px){
+        .three-day-forecast { grid-template-columns: 1fr; }
+        .forecast-day .forecast-condition { min-height: 0; }
+      }
+    `;
+    document.head.appendChild(style);
+
+    const weatherCard = document.getElementById('wayneWeather');
+    if (weatherCard && !document.getElementById('threeDayForecast')) {
+      const heading = document.createElement('div');
+      heading.className = 'forecast-heading';
+      heading.textContent = '3-Day Forecast · Rain Amounts';
+
+      const forecast = document.createElement('div');
+      forecast.id = 'threeDayForecast';
+      forecast.className = 'three-day-forecast';
+      forecast.innerHTML = '<div class="forecast-day">Loading forecast…</div>';
+
+      const source = weatherCard.querySelector('small');
+      if (source) {
+        weatherCard.insertBefore(heading, source);
+        weatherCard.insertBefore(forecast, source);
+      } else {
+        weatherCard.append(heading, forecast);
+      }
+
+      loadThreeDayForecast();
+    }
+  }
+
+  async function loadThreeDayForecast() {
+    const target = document.getElementById('threeDayForecast');
+    if (!target) return;
+
+    const url = 'https://api.open-meteo.com/v1/forecast?latitude=44.3487&longitude=-70.0662&current=temperature_2m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,sunrise,sunset&temperature_unit=fahrenheit&precipitation_unit=inch&timezone=America%2FNew_York&forecast_days=3';
+
+    try {
+      const response = await fetch(url, { cache: 'no-store' });
+      if (!response.ok) throw new Error('Weather request failed');
+      const data = await response.json();
+      const d = data.daily;
+      if (!d || !d.time || !d.time.length) throw new Error('Forecast unavailable');
+
+      const cards = d.time.slice(0, 3).map((date, i) => {
+        const high = Math.round(d.temperature_2m_max[i]);
+        const low = Math.round(d.temperature_2m_min[i]);
+        const chance = Math.round(d.precipitation_probability_max[i] || 0);
+        const amount = Number(d.precipitation_sum[i] || 0);
+        const amountText = amount < 0.005 ? '0.00' : amount.toFixed(2);
+        return `
+          <div class="forecast-day">
+            <strong>${shortDay(date, i)}</strong>
+            <div class="forecast-condition">${weatherCodeToText(d.weather_code[i])}</div>
+            <div class="forecast-temp">${high}° / ${low}°</div>
+            <div class="forecast-rain">Rain ${chance}% · ${amountText} in</div>
+          </div>`;
+      }).join('');
+      target.innerHTML = cards;
+    } catch (err) {
+      target.innerHTML = '<div class="forecast-day">3-day forecast temporarily unavailable.</div>';
+    }
+  }
+
   function updateHomePage() {
     if (!isHomePage()) return;
 
@@ -49,13 +169,13 @@
 
     const footer = document.querySelector('footer');
     if (footer) footer.textContent = 'Lou’s Garden Guide · Updated August 18, 2026';
+
+    addHomeEnhancements();
   }
 
   function addNavigation() {
     updateHomePage();
 
-    // The Home screen already has full site navigation, so do not show
-    // the floating Back and Home controls there.
     if (isHomePage()) return;
     if (document.getElementById('louQuickNavigation')) return;
 
