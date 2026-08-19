@@ -9,3 +9,7 @@ nav .nav a{flex:0 0 auto;white-space:nowrap}
 .plant-info-link:hover{background:#244832}
 figcaption .plant-info-link{width:max-content}
 @media(max-width:900px){.topbar{padding-left:16px;padding-right:16px}.brand strong{font-size:clamp(1.45rem,4vw,2.25rem)}nav .nav{gap:20px;padding-left:16px;padding-right:16px}.hero h1{font-size:clamp(2.5rem,8vw,4.5rem)}}
+
+/* August 18 home-page hero correction. The home page contains #splash, so this does not change journal/project hero banners. */
+body:has(#splash) .hero{background:linear-gradient(90deg,rgba(255,255,255,.20) 0%,rgba(255,255,255,.09) 34%,rgba(255,255,255,.02) 62%,rgba(255,255,255,0) 82%),url('garden-hero-bright.jpg') center/cover no-repeat!important}
+body:has(#splash) .hero:before{background:linear-gradient(90deg,rgba(22,48,31,.04) 0%,rgba(22,48,31,.02) 38%,rgba(22,48,31,0) 70%)!important}
