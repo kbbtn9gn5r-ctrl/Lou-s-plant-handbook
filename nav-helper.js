@@ -24,6 +24,111 @@
     return d.toLocaleDateString('en-US', { weekday: 'short' });
   }
 
+  function enhanceHomeSearch() {
+    if (!isHomePage() || document.getElementById('louSearchPopover')) return;
+
+    const topInput = document.getElementById('topSearch');
+    const sourceLinks = [...document.querySelectorAll('.search-results a')];
+    if (!topInput || !sourceLinks.length) return;
+
+    const style = document.createElement('style');
+    style.id = 'louSearchStyles';
+    style.textContent = `
+      .top-search { position: relative; }
+      .lou-search-popover {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: calc(100% + 7px);
+        z-index: 100000;
+        background: #fffdf8;
+        border: 1px solid #cbd5c9;
+        border-radius: 15px;
+        box-shadow: 0 12px 30px rgba(0,0,0,.18);
+        padding: 7px;
+        max-height: min(52vh, 420px);
+        overflow-y: auto;
+      }
+      .lou-search-popover.open { display: block; }
+      .lou-search-popover a {
+        display: block;
+        padding: 12px 13px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #244832;
+        font-weight: 750;
+        border-bottom: 1px solid #edf0e9;
+      }
+      .lou-search-popover a:last-child { border-bottom: 0; }
+      .lou-search-popover a:active,
+      .lou-search-popover a:focus { background: #e8f0e5; outline: none; }
+      .lou-search-empty { padding: 12px 13px; color: #6b746e; }
+      @media(max-width:950px){
+        .top-search { z-index: 100001; }
+        .lou-search-popover { position: fixed; left: 18px; right: 18px; top: 145px; max-height: 50vh; }
+      }
+    `;
+    document.head.appendChild(style);
+
+    const popover = document.createElement('div');
+    popover.id = 'louSearchPopover';
+    popover.className = 'lou-search-popover';
+    popover.setAttribute('role', 'listbox');
+    popover.setAttribute('aria-label', 'Search results');
+    topInput.parentElement.appendChild(popover);
+
+    function getMatches(value) {
+      const q = value.trim().toLowerCase();
+      if (!q) return [];
+      return sourceLinks.filter(link => {
+        const terms = (link.dataset.search || '').toLowerCase();
+        const label = link.textContent.toLowerCase();
+        return terms.includes(q) || label.includes(q);
+      });
+    }
+
+    function render(value) {
+      const q = value.trim();
+      if (!q) {
+        popover.classList.remove('open');
+        popover.innerHTML = '';
+        return [];
+      }
+
+      const matches = getMatches(value);
+      if (!matches.length) {
+        popover.innerHTML = '<div class="lou-search-empty">No matching plant or topic found.</div>';
+      } else {
+        popover.innerHTML = matches.map(link =>
+          `<a role="option" href="${link.getAttribute('href')}">${link.textContent}</a>`
+        ).join('');
+      }
+      popover.classList.add('open');
+      return matches;
+    }
+
+    topInput.setAttribute('autocomplete', 'off');
+    topInput.setAttribute('aria-controls', 'louSearchPopover');
+    topInput.addEventListener('input', e => render(e.target.value));
+    topInput.addEventListener('focus', e => { if (e.target.value.trim()) render(e.target.value); });
+    topInput.addEventListener('keydown', e => {
+      if (e.key === 'Enter') {
+        const matches = getMatches(topInput.value);
+        if (matches.length) {
+          e.preventDefault();
+          window.location.href = matches[0].getAttribute('href');
+        }
+      } else if (e.key === 'Escape') {
+        popover.classList.remove('open');
+      }
+    });
+
+    document.addEventListener('click', e => {
+      if (!topInput.parentElement.contains(e.target)) popover.classList.remove('open');
+    });
+  }
+
   function addHomeEnhancements() {
     if (!isHomePage()) return;
 
@@ -171,6 +276,7 @@
     if (footer) footer.textContent = 'Lou’s Garden Guide · Updated August 18, 2026';
 
     addHomeEnhancements();
+    enhanceHomeSearch();
   }
 
   function addNavigation() {
