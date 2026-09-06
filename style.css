@@ -18,9 +18,18 @@ body:has(#splash) .hero:before{background:linear-gradient(90deg,rgba(22,48,31,.0
 body:has(#splash) footer{font-size:0}
 body:has(#splash) footer::after{content:"Last updated September 6, 2026";display:block;font-size:.95rem;color:var(--muted)}
 
-/* September 6, 2026 Boomer & Trixie story images */
-#garden-patrol::before,#ordinary-day::before,#kitchen-caper::before{content:"";display:block;width:100%;height:280px;margin:0 0 20px;border-radius:15px;background-size:cover;background-position:center;box-shadow:0 6px 18px rgba(42,62,47,.12)}
-#garden-patrol::before{background-image:url('garden-hero-bright.jpg')}
-#ordinary-day::before{background-image:url('garden-overview.jpg')}
-#kitchen-caper::before{background-image:url('icon-512.png');background-size:contain;background-repeat:no-repeat;background-color:#eef4e9}
-@media(max-width:640px){#garden-patrol::before,#ordinary-day::before,#kitchen-caper::before{height:210px}}
+/* September 6, 2026 Boomer & Trixie story page mobile cleanup */
+.story-wrap .story-image{width:100%!important;height:320px!important;object-fit:cover!important;object-position:center!important;border-radius:16px!important;margin:0 0 16px!important}
+.story-wrap .hero-image{width:100%!important;max-height:420px!important;object-fit:cover!important;object-position:center!important}
+@media(max-width:640px){
+  .story-wrap{padding:14px 12px 48px!important}
+  .story-wrap .story-card{padding:14px!important;margin:14px 0 20px!important;border-radius:18px!important}
+  .story-wrap .story-image{height:220px!important;border-radius:14px!important}
+  .story-wrap .hero-image{height:210px!important;object-fit:cover!important;border-radius:14px!important}
+  .story-wrap .story-card h2{font-size:1.55rem!important;line-height:1.15!important;margin:2px 0 7px!important}
+  .story-wrap .story-card .date{font-size:.78rem!important;line-height:1.35!important;margin-bottom:10px!important}
+  .story-wrap .play-story{width:100%!important;margin:0 0 14px!important;padding:13px 16px!important}
+  .story-wrap .story-card p{font-size:1rem!important;line-height:1.62!important}
+  .story-wrap .story-hero{padding:14px!important;margin:14px 0!important}
+  .story-wrap .story-hero h1{font-size:2rem!important;line-height:1.1!important;margin:14px 0 8px!important}
+}
