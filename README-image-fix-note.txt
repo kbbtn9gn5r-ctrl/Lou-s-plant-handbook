@@ -1,0 +1,1 @@
+Preparing corrected illustrated story image asset.
