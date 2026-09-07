@@ -1,6 +1,6 @@
 {
-  "version": "2.3",
-  "updated": "2026-08-20",
+  "version": "2.4",
+  "updated": "2026-09-07",
   "projectCards": [
     {
       "eyebrow": "Featured houseplant project",
@@ -50,6 +50,17 @@
     }
   ],
   "journalEntries": [
+    {
+      "date": "September 7, 2026",
+      "title": "Multi-Bloom Sunflower in Full Show",
+      "summary": "The tall branching sunflower continues an exceptional display with roughly a dozen visible flower heads at different stages. A featured garden view and a full-plant photograph document the blooms, branching habit, broad leaves, and strong central stem.",
+      "category": "Garden Journal · Sunflowers",
+      "image": "sunflower-sept-7-2026-featured.jpg",
+      "alt": "Multi-bloom sunflower with bright yellow flowers against blue sky and distant Maine hills",
+      "href": "september-7-2026-sunflower.html",
+      "button": "Open sunflower update",
+      "keywords": "sunflower September 7 2026 multi bloom branching tall sunflower yellow flowers full plant garden photo"
+    },
     {
       "date": "August 20, 2026",
       "title": "New Garden Photo Collection",
