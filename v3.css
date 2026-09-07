@@ -1,4 +1,4 @@
-@import url('story-images.css?v=1');
+@import url('story-images.css?v=2');
 
 /* Version 3 shared additions */
 .plant-info-link{display:inline-flex;align-items:center;gap:.35rem;margin:.7rem 0 0 .55rem;padding:.42rem .72rem;border-radius:999px;background:#315d3f;color:#fff!important;text-decoration:none;font-size:.8rem;font-weight:800}
