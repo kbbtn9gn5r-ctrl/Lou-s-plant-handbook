@@ -1,6 +1,6 @@
 /* Boomer & Trixie custom story artwork — restored September 7, 2026.
    Use the approved custom artwork for Stories 1, 2, 3, 5 and 6.
-   Stories 4 and 7 use normal image files so they render reliably in Safari. */
+   Stories 4 and 7 use complete, standard JPEG files so they render reliably in Safari. */
 @import url('story-card-1.css?v=9');
 @import url('story-card-2.css?v=9');
 @import url('story-card-3.css?v=9');
@@ -21,8 +21,8 @@
 .story-card .story-art>*{display:none!important;}
 
 #stolen-blanket .story-art{
-  background-image:url('stolen-blanket-story.jpg?v=20260907-9')!important;
+  background-image:url('story-4-stolen-blanket-2026.jpg?v=20260907-10')!important;
 }
 #garden-rabbit .story-art{
-  background-image:url('boomer-trixie-garden.jpg?v=20260907-9')!important;
+  background-image:url('story-7-garden-rabbit-2026.jpg?v=20260907-10')!important;
 }
