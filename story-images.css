@@ -1,11 +1,10 @@
 /* Boomer & Trixie custom story artwork — restored September 7, 2026.
-   Use the approved custom artwork for Stories 1, 2, 3, 5 and 6.
-   Stories 4 and 7 use complete, standard JPEG files so they render reliably in Safari. */
+   Use the approved custom artwork for Stories 1, 2, 3 and 5.
+   Stories 4, 6 and 7 use complete, standard JPEG files so they render reliably in Safari. */
 @import url('story-card-1.css?v=9');
 @import url('story-card-2.css?v=9');
 @import url('story-card-3.css?v=9');
 @import url('story-card-5.css?v=9');
-@import url('story-card-6.css?v=9');
 
 .story-card .story-art{
   display:block!important;
@@ -25,4 +24,7 @@
 }
 #garden-rabbit .story-art{
   background-image:url('story-7-garden-rabbit-2026.jpg?v=20260907-10')!important;
+}
+#tuesday-lunch-adventure .story-art{
+  background-image:url('story-6-tuesday-lunch-2026-v2.jpg?v=20260907-11')!important;
 }
