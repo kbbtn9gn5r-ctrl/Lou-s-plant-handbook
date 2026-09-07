@@ -1,5 +1,21 @@
-/* Boomer & Trixie story art fix — September 7, 2026
-   The previous photo-sprite override used one heavily compressed 3×2 WebP sheet.
-   On iPhone/Safari it rendered the story cards blurred and visibly corrupted.
-   Disable that override so each story uses its built-in full-resolution SVG artwork,
-   which scales cleanly at every screen size. */
+/* Boomer & Trixie story photo fix — September 7, 2026
+   Replace the temporary SVG/cartoon scenes with the photographic Boomer & Trixie artwork already stored with the site.
+   The SVG remains only as an accessible container; its drawn children are hidden. */
+
+.story-card .story-art {
+  background-repeat:no-repeat !important;
+  background-position:center !important;
+  background-size:cover !important;
+  image-rendering:auto !important;
+}
+.story-card .story-art > * { display:none !important; }
+
+.story-card:nth-of-type(1) .story-art { background-image:url('boomer-trixie-garden.jpg?v=4') !important; }
+.story-card:nth-of-type(2) .story-art { background-image:url('boomer-trixie-cover.jpg?v=4') !important; }
+.story-card:nth-of-type(3) .story-art { background-image:url('boomer-trixie-kitchen.jpg?v=4') !important; }
+.story-card:nth-of-type(4) .story-art { background-image:url('boomer-trixie-home.jpg?v=4') !important; }
+.story-card:nth-of-type(5) .story-art { background-image:url('boomer-trixie-cover.jpg?v=4') !important; }
+.story-card:nth-of-type(6) .story-art { background-image:url('boomer-trixie-garden.jpg?v=4') !important; }
+
+/* Keep the photos from being distorted on phones. */
+.story-art { object-fit:cover !important; }
