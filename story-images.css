@@ -1,16 +1,15 @@
-/* Boomer & Trixie custom story artwork — September 7, 2026.
-   One custom image per story, taken from the approved sample artwork. */
-@import url('story-card-1.css?v=7');
-@import url('story-card-2.css?v=7');
-@import url('story-card-3.css?v=7');
-@import url('story-card-4.css?v=7');
-@import url('story-card-5.css?v=7');
-@import url('story-card-6.css?v=7');
+/* Boomer & Trixie story artwork fix — September 7, 2026.
+   Use the built-in story illustrations directly. This avoids the broken
+   background-image overlays that were hiding the artwork on iPhone/Safari. */
 
 .story-card .story-art{
-  background-repeat:no-repeat!important;
-  background-position:center!important;
-  background-size:cover!important;
-  image-rendering:auto!important;
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:16/9!important;
+  background:#eef2e8!important;
+  overflow:hidden!important;
 }
-.story-card .story-art>*{display:none!important;}
+.story-card .story-art>*{
+  display:initial!important;
+}
